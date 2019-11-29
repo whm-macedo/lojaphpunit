@@ -20,7 +20,6 @@ class DAOCliente{
         $con->execute();
         return "Cadastrado com sucesso";
     }
-
     public function listaClientes(){
         $sql = "SELECT * FROM cliente";
         $con = Conexao::getInstance()->prepare($sql);
@@ -33,7 +32,6 @@ class DAOCliente{
         }
         return $lista;
     }
-
     public function buscarPorId($id){
         $sql ="SELECT * FROM cliente WHERE pk_id = :id";
         $con = Conexao::getInstance()->prepare($sql);
@@ -44,5 +42,11 @@ class DAOCliente{
         $cliente = $con->fetch(\PDO::FETCH_ASSOC);
        // print_r($usuario); //testar saida
         return $cliente;
+    }
+    public function deleteAll(){
+        $sql = "DELETE FROM cliente";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído Todos com sucesso";
     }
 }

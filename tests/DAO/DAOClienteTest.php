@@ -4,6 +4,15 @@ use LOJA\Model\Cliente;
 use LOJA\DAO\DAOCliente;
 
 class DAOClienteTests extends TestCase{
+
+    /**
+     * @before
+     */
+    public function setUpDeleteAll(){
+        $DAO = new DAOCliente();
+        $DAO->deleteAll();
+    }
+
     public function testCadastro(){
         $c = new Cliente();
         //$c->setId();
@@ -21,11 +30,5 @@ class DAOClienteTests extends TestCase{
         $DAO = new DAOCliente();
         $msg = $DAO->cadastrar($c);
         $this->assertEquals($msg, "Cadastrado com sucesso");
-    }
-    public function deleteAll(){
-        $sql = "delete from cliente";
-        $con = Conexao::getInstance()->prepare($sql);
-        $con->execute();
-        return "Excluído Todos com sucesso";
     }
 }

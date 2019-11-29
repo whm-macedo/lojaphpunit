@@ -35,7 +35,8 @@
             $obj = new \LOJA\API\CategoriaVisualizar; 
             $categoria = $obj->dados;
             $view = "visualiza-categoria.php";
-        break;        
+        break;
+
         case 'clientecadastrar':        
             $obj = new \LOJA\API\ClienteCadastrar;
             $msg = $obj->msg;
@@ -53,6 +54,7 @@
             $cliente = $obj->cliente;
             $view = "visualiza-cliente.php";
         break;
+
         case 'produtocadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
         
@@ -69,6 +71,7 @@
             $lista = $obj->lista;
             $view = "lista-produto.php";
         break;
+
         case 'usuariocadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\UsuarioCadastrar;
@@ -87,6 +90,7 @@
             $usuario = $obj->dados;
             $view = "visualiza-usuario.php";
         break;
+
         case 'fornecedorcadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
             $obj = new LOJA\API\FornecedorCadastrar;
@@ -105,11 +109,13 @@
             $fornecedor = $obj->dado;            
             $view = "visualiza-fornecedor.php";
         break;
+
         case 'loginadm':
             $obj = new \LOJA\API\UsuarioLogar;
             $msg = $obj->msg;
             $view = 'form-login-adm.php';
         break;
+
         case 'painellogoff':
             $obj = new \LOJA\API\UsuarioLogoff;
             $view = 'form-login-adm.php';
@@ -118,9 +124,11 @@
             \LOJA\includes\Seguranca::restritoAdm();
             $view = 'painel-adm.php';
         break;
+
         case 'projeto':
             $view = 'projeto.php';
         break;
+
         case 'mapas':
             $view = 'lista-mapa.php';
         break;
@@ -138,6 +146,7 @@
         case 'carrinho':
             $view = 'carrinho.php';
         break;
+        
         case 'home':
                 $obj = new \LOJA\API\CategoriaListar;
                 $lista = $obj->lista;
