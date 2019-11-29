@@ -8,12 +8,12 @@ class ClienteTest extends TestCase{
         $c->setNome('Daniel');
         $c->setTelefone('(21)1231-2132');
         $c->setEmail('daniel@email.com');        
-        // $c->setsetCpf('123.456.789');
+        $c->setCpf('123.456.789');
 
         $this->assertEquals($c->getNome(), 'Daniel');
         $this->assertEquals($c->getTelefone(), '(21)1231-2132');
         $this->assertEquals($c->getEmail(), 'daniel@email.com');  
-        // $this->assertEquals($c->getCpf(), '123.456.789');       
+        $this->assertEquals($c->getCpf(), '123.456.789');       
     }
     public function testErrorEmail(){
         $this->expectException(\Exception::class);
@@ -34,10 +34,10 @@ class ClienteTest extends TestCase{
         $this->expectExceptionMessage('CPF Inválido');
         
         $d = new Cliente();
-        $d->setCpf("");
+        $d->setCpf("058.612.387.31");
     }
 }
 
 //regras
-//arquivos termando com Teste
+//arquivos terminando com Teste
 //metodos comecando com teste 
