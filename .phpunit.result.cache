@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 C:30:"PHPUnit\Runner\TestResultCache":434:{a:2:{s:7:"defects";a:5:{s:22:"ClienteTest::testClass";i:4;s:27:"ClienteTest::testErrorEmail";i:3;s:26:"ClienteTest::testErrorNome";i:3;s:25:"ClienteTest::testErrorCpf";i:3;s:29:"DAOClienteTests::testCadastro";i:4;}s:5:"times";a:5:{s:22:"ClienteTest::testClass";d:0.006;s:27:"ClienteTest::testErrorEmail";d:0.001;s:26:"ClienteTest::testErrorNome";d:0;s:25:"ClienteTest::testErrorCpf";d:0;s:29:"DAOClienteTests::testCadastro";d:0.096;}}}
+=======
+C:30:"PHPUnit\Runner\TestResultCache":352:{a:2:{s:7:"defects";a:4:{s:22:"ClienteTest::testClass";i:4;s:27:"ClienteTest::testErrorEmail";i:3;s:26:"ClienteTest::testErrorNome";i:3;s:25:"ClienteTest::testErrorCpf";i:3;}s:5:"times";a:4:{s:22:"ClienteTest::testClass";d:0.023;s:27:"ClienteTest::testErrorEmail";d:0.002;s:26:"ClienteTest::testErrorNome";d:0;s:25:"ClienteTest::testErrorCpf";d:0.001;}}}
+>>>>>>> 71ec0e9d46bb7bc43140ca9f9d4cf808e683ed50
