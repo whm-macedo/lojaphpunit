@@ -2,8 +2,7 @@
 use PHPUnit\Framework\TestCase; // importar o PHPUnit
 use LOJA\Model\Cliente; // Configuração do nome LOJA no autoload, composer.json
 
-class ClienteTest extends TestCase
-{
+class ClienteTest extends TestCase{
     public function testClass(){
         $c = new Cliente();
         $c->setNome('Daniel');
