@@ -36,6 +36,14 @@ padding-top: 10px;
     border:0px !important;
 }
 
+/* FOOTER */
+footer{
+    background-color:#FFFAFA;
+}
+.footer-copyright{
+    background-color:#F5F5F5;
+    
+}
 
 /* Estilos aplicados a larguras até 480 pixels */
 
