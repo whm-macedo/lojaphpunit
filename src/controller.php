@@ -14,7 +14,7 @@
     $view = "";
 
     // config
-    $url = "http://localhost/projetomvc2/src/";
+    $url = "http://localhost/lojaphpunit/src/";
 
     switch($router){
 
