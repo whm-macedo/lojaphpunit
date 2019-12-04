@@ -23,7 +23,7 @@
     <div class="col-md-1 col-sm-1 d-none d-sm-block">
       <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
         <a class="navbar-brand" href="#">
-          <img src="<?php echo DIRIMG; ?>/img/core-sl.png" width="30" height="30" alt="">
+          <img src="<?php echo DIRIMG; ?>core-sl.png" width="30" height="30" alt="">
         </a>
       </nav>
     </div>
@@ -81,7 +81,7 @@
       </li>
       <!-- BOTAR PHP -->
       <li class="nav-item dropdown "> 
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Como funciona</a>
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo BASEURL; ?>comofunciona">Como funciona</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item">Posso ser doador</a>
                 <a class="dropdown-item">Para aonde meu sangue vai</a>

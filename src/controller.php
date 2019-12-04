@@ -15,7 +15,8 @@
     $view = "";
 
     // config
-    $url = "http://localhost/lojaphpunit/src/";
+    //$url = "http://localhost/lojaphpunit/src/";
+    $url = "http://doemais.web70113.uni5.net/";
 
     switch($router){
 

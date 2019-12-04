@@ -10,7 +10,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active text-center">
-      <img class="carousel-img mt-4" src="<?php echo $url; ?>/img/DOE+.png" alt="first slide">
+      <img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>DOE+.png" alt="first slide">
       <div class="mt-4">
         <h5 style=" color:#FFFFFF ;">POSSO SER UM DOADOR?</h5>
       </div>
@@ -48,7 +48,7 @@
           ?>
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">
-              <a href="#"><img class="card-img-top" src="<?php echo $url . "/View/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
+              <a href="#"><img class="card-img-top" src="<?php echo BASEURL . "/View/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#"></a>
