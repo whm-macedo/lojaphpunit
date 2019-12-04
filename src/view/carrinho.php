@@ -31,7 +31,7 @@
                 foreach ($carrinho->getItems() as $item) {
 
                     $produto = $item->getProduto();
-                    $linkRemove = "http://localhost/projetomvc2/src/carrinho/remover/" . $produto->getPk_produto();
+                    $linkRemove = "http://localhost/lojaphpunit/src/carrinho/remover/" . $produto->getPk_produto();
 
                     // Inicio HTML
 
