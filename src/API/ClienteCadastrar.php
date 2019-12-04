@@ -25,7 +25,7 @@ if ($_POST) {
         $DAO = new DAOCliente();
         $this->msg = $DAO->cadastrar($obj);
 
-    } catch (Exception $e) {
+    } catch (\Exception $e) {
         $this->msg = $e->getMessage();
     }
 }

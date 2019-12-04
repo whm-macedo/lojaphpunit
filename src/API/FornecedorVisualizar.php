@@ -13,7 +13,7 @@ class FornecedorVisualizar{
                 $DAO = new DAOFornecedor();
                 $this->dado = $DAO->buscarPorId($_GET['id']);
        
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 $this->dado = $e->getMessage();
             }
         }

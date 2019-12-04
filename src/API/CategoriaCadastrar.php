@@ -16,7 +16,7 @@ class CategoriaCadastrar{
                 $DAO = new DAOCategoria;
                 $this->msg = $DAO->cadastrarCategoria($cadastrar);
 
-            } catch (Exception $erro) {
+            } catch (\Exception $erro) {
                 $this->msg = $erro->getMessage();
             }
         }

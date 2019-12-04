@@ -16,7 +16,7 @@
 
     // config
     //$url = "http://localhost/lojaphpunit/src/";
-    $url = "http://doemais.web70113.uni5.net/";
+    //$url = "http://doemais.web70113.uni5.net/";
 
     switch($router){
 
@@ -123,7 +123,7 @@
             $view = 'form-login-adm.php';
         break;
         case 'paineladm':
-            \LOJA\includes\Seguranca::restritoAdm();
+            //\LOJA\includes\Seguranca::restritoAdm();
             $view = 'painel-adm.php';
         break;
 

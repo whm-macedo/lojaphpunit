@@ -16,7 +16,7 @@ class UsuarioCadastrar{
                 $DAO = new DAOUsuario;
                 $this->msg = $DAO->cadastrarUsuario($cadastrar);
 
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 $$this->msg = $e->getMessage();
             }
         }

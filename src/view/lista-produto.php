@@ -15,7 +15,7 @@
     </ul>
 
     <?php foreach ($lista as $produto) {
-      $linkRemove = "http://localhost/lojaphpunit/src/carrinho/adicionar/" . $produto['id'];
+      $linkRemove = BASEURL."carrinho/adicionar/" . $produto['id'];
       ?>
 
 

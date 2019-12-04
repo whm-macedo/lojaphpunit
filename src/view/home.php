@@ -14,15 +14,15 @@
       <div class="mt-4">
         <h5 style=" color:#FFFFFF ;">POSSO SER UM DOADOR?</h5>
       </div>
-      <div><a class="btn  btn-primary" href="<?php echo $url  ?>view/como-funciona.php" role="button" style="background-color:#FFFFFF; color: red;">Saiba Mais</a></div>
+      <div><a class="btn  btn-primary" href="<?php echo BASEURL  ?>view/como-funciona.php" role="button" style="background-color:#FFFFFF; color: red;">Saiba Mais</a></div>
 
     </div>
     <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo $url; ?>" alt="...">
+      <img class="carousel-img" src="<?php echo BASEURL; ?>" alt="...">
 
     </div>
     <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo $url; ?>" alt="...">
+      <img class="carousel-img" src="<?php echo BASEURL; ?>" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -44,7 +44,7 @@
     <div class="container">
       <div class="row mt-3">
         <?php foreach ($lista2 as $produto) {
-          $linkRemove = "http://localhost/lojaphpunit/src/carrinho/adicionar/" . $produto['id'];
+          $linkRemove = BASEURL ."carrinho/adicionar/" . $produto['id'];
           ?>
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">

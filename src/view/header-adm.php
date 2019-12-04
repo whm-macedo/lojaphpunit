@@ -9,10 +9,10 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo $url; ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo $url; ?>/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="<?php echo DIRCSS; ?>bootstrap.css">
+    <link rel="stylesheet" href="<?php echo DIRCSS; ?>fontawesome/css/all.css">
 
-    <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo DIRCSS; ?>style.css">
     <title>DOE+</title>
 </head>
 
@@ -24,7 +24,7 @@
         <div class="col-md-1 col-sm-1 d-none d-sm-block">
             <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
                 <a class="navbar-brand" href="#">
-                    <img src="<?php echo $url; ?>/img/core-sl.png" width="30" height="30" alt="">
+                    <img src="<?php echo DIRIMG; ?>core-sl.png" width="30" height="30" alt="">
                 </a>
             </nav>
         </div>
@@ -44,7 +44,7 @@
             </nav>
         </div>
         <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-            <a href="<?php echo $url; ?>loginadm"> <i class="fas fa-sign-out-alt" style="color: #ff0000;" ></i>Sair</i></a>
+            <a href="<?php echo BASEURL; ?>loginadm"> <i class="fas fa-sign-out-alt" style="color: #ff0000;" ></i>Sair</i></a>
 
         </div>
         
@@ -90,7 +90,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo $url; ?>produto/listar">Loja</a>
+                        <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
                     </li>
                 </ul>
 

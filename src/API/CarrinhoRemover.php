@@ -20,8 +20,8 @@ class CarrinhoRemover{
             }
         }else{
             //Se ão existir carrinho criado, retorna a página inicial
-            header("location: http://localhost/projetomvc2/src/home");
-            // header("location:".BASEURL)
+            //header("location: http://localhost/lojaphpunit/src/");
+            header("location:".BASEURL);
         }
     }
 }

@@ -18,7 +18,7 @@ class FornecedorCadastrar{
                 $DAO = new DAOFornecedor;
                 $this->msg = $DAO->cadastrarFornecedor($cadastrar);
 
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 $this->msg = $e->getMessage();
             }
         }

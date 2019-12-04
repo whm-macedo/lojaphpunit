@@ -11,7 +11,7 @@ class UsuarioVisualizar{
             try {
                 $DAO = new DAOUsuario();
                 $usuario = $DAO->buscarPorId($_GET['id']);
-            }catch (Exception $e) {
+            }catch (\Exception $e) {
                 $msg = $e->getMessage();
             }
         }

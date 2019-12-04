@@ -20,7 +20,8 @@ class UsuarioLogar{
                     $_SESSION['usuarioid'] = $result['id'];
                     $_SESSION['usuarionome'] = $result['nome'];
                     
-                    header ("location: http://localhost/lojaphpunit/painel/adm");
+                    // header("location: http://localhost/lojaphpunit/src/painel/adm");
+                    header ("location:".BASEURL."painel/adm");
                 }else{
                     $this->msg = 'Usuário/Senha inválidos';
                 }
