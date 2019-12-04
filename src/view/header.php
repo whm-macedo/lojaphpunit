@@ -9,10 +9,9 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/bootstrap.css">
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/fontawesome/css/all.css">
-
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css">
+  <link rel="stylesheet" href="<?php echo DIRCSS; ?>bootstrap.css">
+  <link rel="stylesheet" href="<?php echo DIRFAW; ?>all.css">
+  <link rel="stylesheet" href="<?php echo DIRCSS; ?>style.css">
   <title>DOE+</title>
 </head>
 
@@ -24,7 +23,7 @@
     <div class="col-md-1 col-sm-1 d-none d-sm-block">
       <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
         <a class="navbar-brand" href="#">
-          <img src="<?php echo $url; ?>/img/core-sl.png" width="30" height="30" alt="">
+          <img src="<?php echo DIRIMG; ?>/img/core-sl.png" width="30" height="30" alt="">
         </a>
       </nav>
     </div>
@@ -51,11 +50,11 @@
       </nav>
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-      <a href="<?php echo $url; ?>loginadm"> <i class="fas fa-user icon"> Login</i></a>
+      <a href="<?php echo BASEURL; ?>loginadm"> <i class="fas fa-user icon"> Login</i></a>
 
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
-      <a href=" <?php echo $url; ?>carrinho" class="mb-3"><i class="fas fa-cart-plus icon"> Meu Carrinho</i></a>
+      <a href=" <?php echo BASEURL; ?>carrinho" class="mb-3"><i class="fas fa-cart-plus icon"> Meu Carrinho</i></a>
 
     </div>
 
@@ -72,13 +71,13 @@
   <div class="collapse navbar-collapse catnav" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link"href="<?php echo $url; ?>home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link"href="<?php echo BASEURL; ?>home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo $url; ?>projeto">Projeto</a>
+        <a class="nav-link" href="<?php echo BASEURL; ?>projeto">Projeto</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo $url; ?>mapas">Mapas</a>
+        <a class="nav-link" href="<?php echo BASEURL; ?>mapas">Mapas</a>
       </li>
       <!-- BOTAR PHP -->
       <li class="nav-item dropdown "> 
@@ -92,12 +91,12 @@
             </li>
        <!-- BOTAR PHP -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
           Ser voluntario
         </a>
       </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo $url; ?>produto/listar">Loja</a>
+              <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
             </li>
     </ul>
 
@@ -123,17 +122,17 @@
             <a class="nav-link" href="#"><i class="fas fa-tshirt"></i> Roupa<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>projeto"><i class="fas fa-gamepad"></i> Brinquedos</a>
+            <a class="nav-link" href="<?php echo BASEURL; ?>projeto"><i class="fas fa-gamepad"></i> Brinquedos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>mapas"><i class="fas fa-sticky-note"></i> Adesivos</a>
+            <a class="nav-link" href="<?php echo BASEURL; ?>mapas"><i class="fas fa-sticky-note"></i> Adesivos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>mapas"><i class="fas fa-laptop-code"></i>
+            <a class="nav-link" href="<?php echo BASEURL; ?>mapas"><i class="fas fa-laptop-code"></i>
               Informatica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>mapas"><i class="fas fa-sticky-note"></i> Acessorios</a>
+            <a class="nav-link" href="<?php echo BASEURL; ?>mapas"><i class="fas fa-sticky-note"></i> Acessorios</a>
           </li>
 
         </ul>

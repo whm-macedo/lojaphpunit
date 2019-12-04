@@ -8,7 +8,7 @@ if ( !defined('ABSPATH') )
 
 /* caminho no server para o sistema */
 if ( !defined('BASEURL') )
-    define('BASEURL', 'http://localhost/projetomvc/');
+    define('BASEURL', 'http://localhost/lojaphpunit/src/');
 // print_r(BASEURL);
 
 #Diretórios Específicos
