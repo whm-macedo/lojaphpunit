@@ -61,7 +61,7 @@
             $obj = new \LOJA\API\ProdutoCadastrar;
             $msg = $obj->msg;
 
-            $obj2 = new \LOJA\API\CategoriaListar;                ;
+            $obj2 = new \LOJA\API\CategoriaListar;          
             $lista = $obj2->lista;
 
             $view = "form-produto.php";
@@ -146,7 +146,17 @@
         case 'carrinho':
             $view = 'carrinho.php';
         break;
+        case 'carrinho':
+            $view = 'carrinho.php';
+        break;
+        case 'comofunciona':
+            $view = 'como-funciona.php';
+        break;
         
+        case 'voluntario':
+            $view = 'voluntario.php';
+        break;
+
         case 'home':
                 $obj = new \LOJA\API\CategoriaListar;
                 $lista = $obj->lista;
