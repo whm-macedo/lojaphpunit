@@ -43,7 +43,7 @@
                 
                 <div class="col-md-3 p-0">
                     <div class="card">
-                        <img class="card-img-top" src="<?php echo $url . '/View/img/produtos/' . $produto->getImagem(); ?>" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="<?php echo BASEURL . '/View/img/produtos/' . $produto->getImagem(); ?>" alt="Imagem de capa do card">
                     </div>
                 </div>
 

@@ -8,7 +8,8 @@ if ( !defined('ABSPATH') )
 
 /* caminho no server para o sistema */
 if ( !defined('BASEURL') )
-    define('BASEURL', 'http://localhost/lojaphpunit/src/');
+	//define('BASEURL', 'http://www.doemais.web70113.uni5.net/');
+	define('BASEURL', 'http://localhost/lojaphpunit/src/');
 // print_r(BASEURL);
 
 #Diretórios Específicos
