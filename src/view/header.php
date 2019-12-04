@@ -50,7 +50,7 @@
       </nav>
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-      <a href="<?php echo BASEURL; ?>loginadm"> <i class="fas fa-user icon"> Login</i></a>
+      <a href="<?php echo BASEURL; ?>login/adm"> <i class="fas fa-user icon"> Login</i></a>
 
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">

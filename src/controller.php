@@ -1,7 +1,9 @@
 <?php 
+   
     require "includes/autoload.php";
     require "config/Constante.php";
     session_start();
+    
 
     
     // capturando os dados da url
@@ -148,9 +150,7 @@
         case 'carrinho':
             $view = 'carrinho.php';
         break;
-        case 'carrinho':
-            $view = 'carrinho.php';
-        break;
+        
         case 'comofunciona':
             $view = 'como-funciona.php';
         break;
@@ -184,5 +184,3 @@
 
   
     include "view/{$view}";
-  
-?>

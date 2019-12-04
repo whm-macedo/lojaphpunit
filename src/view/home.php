@@ -18,11 +18,11 @@
 
     </div>
     <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo BASEURL; ?>" alt="...">
+      <img class="carousel-img" src="<?php echo DIRIMG; ?>" alt="...">
 
     </div>
     <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo BASEURL; ?>" alt="...">
+      <img class="carousel-img" src="<?php echo DIRIMG; ?>" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -48,7 +48,7 @@
           ?>
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">
-              <a href="#"><img class="card-img-top" src="<?php echo BASEURL . "/View/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
+              <a href="#"><img class="card-img-top" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#"></a>

@@ -1,4 +1,3 @@
-<?php
 
     # Seja um programa para aceitar idade de uma pessoa 
     # com no mínimo 16 anos.
@@ -51,5 +50,3 @@
     "1234567" -> Senha é válida
     "daniel@rj.senac.br", "123456" -> Usuário Autenticado
     "daniel@rj.senac.br", "123459" -> Usuário inválido
-
-?>
