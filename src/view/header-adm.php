@@ -39,15 +39,31 @@
 
         </div>
         <div class="col-md-4 col-sm-3 d-flex justify-content-center ">
+
             <nav class="navbar navbar-light ">
-                
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>painel/adm">
+                <i class="fas fa-chevron-right"></i>
+                    Voltar
+                </a>
+            </nav>
+            <nav class="navbar navbar-light ">
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </nav>
+            <nav class="navbar navbar-light ">
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>login/adm">
+                <i class="fas fa-sign-out-alt"></i>
+                    Logoff
+                </a>
             </nav>
         </div>
         <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-            <a href="<?php echo BASEURL; ?>login/adm"> <i class="fas fa-sign-out-alt" style="color: #ff0000;" ></i>Sair</i></a>
+            <a href=""></i></i></a>
 
         </div>
-        
+
 
     </div>
     </div>
@@ -66,21 +82,21 @@
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Cadastrar</a>
                         <div class="dropdown-menu">
-                            <a href= "<?php echo BASEURL?>produto/cadastrar" class="dropdown-item">Produto</a>
-                            <a href= "<?php echo BASEURL?>fornecedor/cadastrar" class="dropdown-item">Fornecedor</a>
-                            <a href= "<?php echo BASEURL?>usuario/cadastrar" class="dropdown-item">Usuario</a>
-                            <a href= "<?php echo BASEURL?>cliente/cadastrar" class="dropdown-item">Cliente</a>
-                            <a href= "<?php echo BASEURL?>voluntario/cadastrar" class="dropdown-item">Voluntario</a>
+                            <a href="<?php echo BASEURL ?>produto/cadastrar" class="dropdown-item">Produto</a>
+                            <a href="<?php echo BASEURL ?>fornecedor/cadastrar" class="dropdown-item">Fornecedor</a>
+                            <a href="<?php echo BASEURL ?>usuario/cadastrar" class="dropdown-item">Usuario</a>
+                            <a href="<?php echo BASEURL ?>cliente/cadastrar" class="dropdown-item">Cliente</a>
+                            <a href="<?php echo BASEURL ?>voluntario/cadastrar" class="dropdown-item">Voluntario</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Listar </a>
                         <div class="dropdown-menu">
-                            <a href= "<?php echo BASEURL?>produto/listar" class="dropdown-item">Produto</a>
-                            <a href= "<?php echo BASEURL?>fornecedor/listar" class="dropdown-item">Fornecedor</a>
-                            <a href= "<?php echo BASEURL?>usuario/listar" class="dropdown-item">Usuario</a>
-                            <a href= "<?php echo BASEURL?>cliente/listar" class="dropdown-item">Cliente</a>
-                            <a href= "<?php echo BASEURL?>voluntario/listar" class="dropdown-item">Voluntario</a>
+                            <a href="<?php echo BASEURL ?>produto/listar" class="dropdown-item">Produto</a>
+                            <a href="<?php echo BASEURL ?>fornecedor/listar" class="dropdown-item">Fornecedor</a>
+                            <a href="<?php echo BASEURL ?>usuario/listar" class="dropdown-item">Usuario</a>
+                            <a href="<?php echo BASEURL ?>cliente/listar" class="dropdown-item">Cliente</a>
+                            <a href="<?php echo BASEURL ?>voluntario/listar" class="dropdown-item">Voluntario</a>
                         </div>
                     </li>
                     <!-- BOTAR PHP -->

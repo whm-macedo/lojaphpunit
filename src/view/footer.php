@@ -9,8 +9,10 @@
       <div class="row">
         <div class="col-md mb-4 mb-lg-0 ml-2">
           <div class="lead mb-4 border rounded p-3 ">
-            <div class="mb-2">
+          <div class="mb-2">
               <img src="https://avatars1.githubusercontent.com/u/33559500?s=400&u=ce99604febc48534d87e520b50024d4f42ab2889&v=4" alt="Roberto Rabelo" class="img-resposive w-25 img-circle border mr-3"> Roberto Rabelo
+              <br>
+              <small class="text-muted p-0 m-0">Front-end da pagina</small>
             </div>
             <ul class="list-inline">
               <li class="list-inline-item ">
@@ -40,6 +42,8 @@
           <div class="lead mb-4 border rounded p-3 ">
             <div class="mb-2">
               <img src="https://avatars0.githubusercontent.com/u/56602187?s=400&v=4" alt="William Marcedo" class="img-resposive w-25 img-circle border mr-3"> William Marcedo
+              <br>
+              <small class="text-muted">Back-end da pagina</small>
             </div>
             <ul class="list-inline">
               <li class="list-inline-item ">
@@ -69,6 +73,8 @@
           <div class="lead mb-4 border rounded p-3 ">
             <div class="mb-2">
               <img src="https://avatars1.githubusercontent.com/u/29874680?s=400&v=4" alt="Kaio Campos" class="img-resposive w-25 img-circle border mr-3"> Kaio Campos
+              <br>
+              <small class="text-muted">Back-end da pagina</small>
             </div>
             <ul class="list-inline">
               <li class="list-inline-item ">
