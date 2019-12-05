@@ -35,4 +35,10 @@ class DAOCategoria{
        // print_r($usuario); //testar saida
         return $categoria;
     } 
+    public function deleteAll(){
+        $sql = "DELETE FROM categoria";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído Todos com sucesso";
+    }
 }
