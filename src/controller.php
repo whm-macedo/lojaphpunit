@@ -173,6 +173,13 @@
 
                 // $view = "lista-produto.php";
         break;
+
+        case 'fretecalcular':
+            $obj = new \LOJA\API\CalcularFrete;
+            $frete = $obj->frete;
+
+            $view = "carrinho.php";
+        break;
         
         default:
                 $obj = new \LOJA\API\ProdutoListarHome;
