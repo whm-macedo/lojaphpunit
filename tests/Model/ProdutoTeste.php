@@ -41,5 +41,12 @@ class ProdutoTest extends TestCase{
         $c = new Produto;
         $c->setCategoria("");
     }
+    public function testErrorImagem(){
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessage('Imagem Inválida');
+        
+        $c = new Produto;
+        $c->setImagem("");
+    }
 
 }

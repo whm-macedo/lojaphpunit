@@ -63,7 +63,12 @@ namespace LOJA\Model;
         }
     
         public function setImagem($imagem){
-            $this->imagem = $imagem;
+            if (!empty($imagem)) {
+                $this->imagem = $imagem;
+            }else{
+                throw new \Exception('Imagem Inválida');                
+            }
+            
         }
        
     }
