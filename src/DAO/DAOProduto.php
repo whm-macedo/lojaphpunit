@@ -79,5 +79,11 @@ class DAOProduto{
         
         return $produto;
     }
+    public function deleteAll(){
+        $sql = "DELETE FROM produto";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído Todos com sucesso";
+    }
 }
 ?>
