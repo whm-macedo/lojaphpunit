@@ -24,7 +24,7 @@ class DAOCategoriaTests extends TestCase{
         $produto->setImagem('camisa.jpg');
 
         $categoria = new Categoria();
-        $categoria->setPk_categoria(79);
+        $categoria->setPk_categoria(63); // id da categoria no banco de dados
         $produto->setCategoria($categoria);
 
 
