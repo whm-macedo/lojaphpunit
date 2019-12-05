@@ -25,7 +25,12 @@ namespace LOJA\Model;
         }
     
         public function setNome($nome){
-            $this->nome = $nome;
+            if (!empty($nome)) {
+                $this->nome = $nome;    
+            }else{
+                throw new \Exception('Nome Inválido');
+            }
+            
         }
     
         public function getPreco(){
@@ -33,7 +38,12 @@ namespace LOJA\Model;
         }
     
         public function setPreco($preco){
-            $this->preco = $preco;
+            if (!empty($preco)) {
+                $this->preco = $preco;
+            }else{
+                throw new \Exception('Preço Inválido');
+            }
+            
         }
     
         public function getCategoria(){
@@ -41,14 +51,24 @@ namespace LOJA\Model;
         }
     
         public function setCategoria($categoria){
-            $this->categoria = $categoria;
+            if (!empty($categoria)) {
+                $this->categoria = $categoria;
+            }else{
+                throw new \Exception('Categoria Inválida');                
+            }
+            
         }
         public function getImagem(){
             return $this->imagem;
         }
     
         public function setImagem($imagem){
-            $this->imagem = $imagem;
+            if (!empty($imagem)) {
+                $this->imagem = $imagem;
+            }else{
+                throw new \Exception('Imagem Inválida');                
+            }
+            
         }
        
     }
