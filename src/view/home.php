@@ -44,11 +44,11 @@
     <div class="container">
       <div class="row mt-3">
         <?php foreach ($lista2 as $produto) {
-          $linkRemove = BASEURL ."carrinho/adicionar/" . $produto['id'];
+          $linkRemove = BASEURL . "carrinho/adicionar/" . $produto['id'];
           ?>
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">
-              <a href="#"><img class="card-img-top" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
+              <a href="#"><img class="card-img-top grow" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#"></a>
@@ -81,27 +81,27 @@
     <p class="lead">Beneficios de ser um doador</p>
     <hr class="mb-4">
     <div class="row">
-  <div class="col-4">
-    <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="1">Uma doação de sangue pode salvar até 4 vidas</a>
-      <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list" href="#list-2" role="tab" aria-controls="wild">Seu organismo repõe rapidamente o sangue doado</a>
-      <a class="list-group-item list-group-item-action" id="list-3-list" data-toggle="list" href="#list-3" role="tab" aria-controls="messages">Exame de Sangue Gratuito</a>
-      <a class="list-group-item list-group-item-action" id="list-4-list" data-toggle="list" href="#list-4" role="tab" aria-controls="messages">Ajudar outras pessoas faz bem para você também</a>
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="1">Uma doação de sangue pode salvar até 4 vidas</a>
+          <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list" href="#list-2" role="tab" aria-controls="wild">Seu organismo repõe rapidamente o sangue doado</a>
+          <a class="list-group-item list-group-item-action" id="list-3-list" data-toggle="list" href="#list-3" role="tab" aria-controls="messages">Exame de Sangue Gratuito</a>
+          <a class="list-group-item list-group-item-action" id="list-4-list" data-toggle="list" href="#list-4" role="tab" aria-controls="messages">Ajudar outras pessoas faz bem para você também</a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-1" role="tabpanel" aria-labelledby="list-1-list">Após a coleta, o conteúdo da bolsa é fracionado em componentes sanguíneos (concentrado de hemácias, de plaquetas e plasma) que são examinados para que haja a certeza de que não existe a presença de nenhuma doença neles. Se há reação sorológica, a unidade é descartada. Caso contrário, os componentes são liberados e
+            podem ser usados em até quatro pessoas, ou seja, podem salvar até quatro vidas.</div>
+          <div class="tab-pane fade" id="list-2" role="tabpanel" aria-labelledby="list-2-list">Uma pessoa adulta, seja do sexo masculino ou feminino, possui em média cinco litros de sangue, e em uma doação são coletados no máximo 450 ml - ou seja, menos de 10% de todo o sangue.
+            Este volume é reposto em 24 horas pelo organismo.</div>
+          <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-2-list">Quem deseja doar sangue passa por uma avaliação prévia para detectar se há condições ou doenças que possam ser impeditivas para a doação. Essa entrevista e esses exames são particulares e
+            os dados e resultados são mantidos sob total sigilo.</div>
+          <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-2-list">Tanto quem recebe quanto quem doa sangue é beneficiado. A solidariedade é uma troca: psicologicamente,
+            a sensação de fazer o bem aos outros afeta positivamente o autor da ação.</div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-6">
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="list-1" role="tabpanel" aria-labelledby="list-1-list">Após a coleta, o conteúdo da bolsa é fracionado em componentes sanguíneos (concentrado de hemácias, de plaquetas e plasma) que são examinados para que haja a certeza de que não existe a presença de nenhuma doença neles. Se há reação sorológica, a unidade é descartada. Caso contrário, os componentes são liberados e
-         podem ser usados em até quatro pessoas, ou seja, podem salvar até quatro vidas.</div>
-      <div class="tab-pane fade" id="list-2" role="tabpanel" aria-labelledby="list-2-list">Uma pessoa adulta, seja do sexo masculino ou feminino, possui em média cinco litros de sangue, e em uma doação são coletados no máximo 450 ml - ou seja, menos de 10% de todo o sangue. 
-        Este volume é reposto em 24 horas pelo organismo.</div>
-      <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-2-list">Quem deseja doar sangue passa por uma avaliação prévia para detectar se há condições ou doenças que possam ser impeditivas para a doação. Essa entrevista e esses exames são particulares e 
-        os dados e resultados são mantidos sob total sigilo.</div>
-      <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-2-list">Tanto quem recebe quanto quem doa sangue é beneficiado. A solidariedade é uma troca: psicologicamente, 
-        a sensação de fazer o bem aos outros afeta positivamente o autor da ação.</div>
-    </div>
-  </div>
-</div>
   </div>
 
   <!-- FIM JUMBOTRON "IMPORTANCIA DE DOAR SANGUE" -->
@@ -110,18 +110,33 @@
 
 
   <!-- INICIO MAPBOX -->
-  <div class="container">
-    <div class="mapbox" id='map' style='width: 100%; height: 300px;'>
-      <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iZXJ0by1qdW5pb3I5OSIsImEiOiJjazJuN212YTkwMXB5M2JuejI4cTQ0MTd2In0.hXajmx4S4Ev9eaeJPKeSeA';
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v11'
-        });
-      </script>
+
+  <div class='sidebar'>
+    <div class='heading'>
+      <h1>LOCAIS DOAÇÃO </h1>
+    </div>
+    <div id='listings' class='listings'>
+
     </div>
   </div>
-  <!-- FIM MAPBOX -->
+  <div id='map' class='map pad2'>Map
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iZXJ0by1qdW5pb3I5OSIsImEiOiJjazJuN212YTkwMXB5M2JuejI4cTQ0MTd2In0.hXajmx4S4Ev9eaeJPKeSeA';
+      // This adds the map to your page
+      var map = new mapboxgl.Map({
+        // container id specified in the HTML
+        container: 'map',
+        // style URL
+        style: 'mapbox://styles/mapbox/light-v10',
+        // initial position in [lon, lat] format
+        center: [-77.034084, 38.909671],
+        // initial zoom
+        zoom: 14
+      });
+    </script>
+  </div>
 
+  <!-- FIM MAPBOX -->
+  
 
   <?php include "view/footer.php"; ?>

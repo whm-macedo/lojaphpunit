@@ -43,7 +43,7 @@
 
                         <div class="col-md-3 p-0">
                             <div class="card">
-                                <img class="card-img-top" src="<?php echo BASEURL . 'view/img/produtos/' . $produto->getImagem(); ?>" alt="Imagem de capa do card">
+                                <img class="card-img-top grow" src="<?php echo BASEURL . 'view/img/produtos/' . $produto->getImagem(); ?>" alt="Imagem de capa do card">
                             </div>
                         </div>
 
@@ -73,7 +73,7 @@
                         </div>
                         <div class="cold-md-3">
                             <div class="card-body">
-                                <h5 class="card-title mb-0">15.500,00</h5>
+                                <h5 class="card-title mb-0">15.000</h5>
                                 <p class="card-text">Essa camisa está com desconto</p>
                                 <div>
                                     <a href="<?php echo $linkRemove; ?>" class="btn btn-danger">Remover</a>

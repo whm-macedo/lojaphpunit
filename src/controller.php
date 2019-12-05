@@ -139,12 +139,12 @@
 
         case 'carrinhoadicionar':
             $obj = new \LOJA\API\CarrinhoVisualizar;
- 
+            
             $view = 'carrinho.php';
         break;
         case 'carrinhoremover':
             $obj = new \LOJA\API\CarrinhoRemover;
-            // $lista = $obj->lista;
+            //$lista = $obj->lista;
             $view = 'carrinho.php';
         break;
         case 'carrinho':
