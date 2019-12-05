@@ -107,7 +107,7 @@
 
 </div>
 <!-- Colocar onde quer que apareca o o valor -->
-<form method="POST" action="<?php echo $url; ?>frete/calcular ">
+<form method="POST" action="<?php echo BASEURL; ?>frete/calcular ">
     <label for="">Frete</label>
     <input type="text" size="20" name="cep">
     <button>Calcular</button>
