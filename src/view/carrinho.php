@@ -106,5 +106,17 @@
 ?>
 
 </div>
+<!-- Colocar onde quer que apareca o o valor -->
+<form method="POST" action="<?php echo $url; ?>frete/calcular ">
+    <label for="">Frete</label>
+    <input type="text" size="20" name="cep">
+    <button>Calcular</button>
+    <?php
+        if (isset($_POST['cep'])) {
+            echo "<p>Preço: R$ ".$frete->getValor()."</p>";
+            echo "<p>Entrega: R$ ".$frete->getPrazoEntrega()." dias</p>";
+        }
+    ?>
+</form>
 
 <?php include "footer.php" ?>

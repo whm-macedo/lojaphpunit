@@ -16,8 +16,8 @@ class Frete{
     private $largura;     /* altura do produto em cm incluindo a embalagem */
     private $comprimento; /* comprimento do produto incluindo embalagem em cm */
     private $valorDeclarado='1'; /* indicar 0 caso nao queira o valor declarado */
-    private $prazoEntrega;
-    private $valor;
+    private $prazoEntrega; // recebe os dados dos correios
+    private $valor; // recebe os dados dos correios
 
 
 
