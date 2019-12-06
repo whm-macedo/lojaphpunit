@@ -39,4 +39,10 @@ class DAOFornecedor{
     // print_r($usuario); //testar saida
         return $fornecedor;
 }
+public function deleteAll(){
+    $sql = "DELETE FROM fornecedor";
+    $con = Conexao::getInstance()->prepare($sql);
+    $con->execute();
+    return "Excluído Todos com sucesso";
+}
 }

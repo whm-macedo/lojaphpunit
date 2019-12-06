@@ -51,5 +51,11 @@ class DAOUsuario{
        
         return $obj;
     }
+    public function deleteAll(){
+        $sql = "DELETE FROM usuario";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído Todos com sucesso";
+    }
 }
 
