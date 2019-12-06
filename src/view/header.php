@@ -81,7 +81,7 @@
       </li>
       <!-- BOTAR PHP -->
       <li class="nav-item dropdown "> 
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo BASEURL; ?>comofunciona">Como funciona</a>
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo BASEURL; ?>como/funciona">Como funciona</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item">Posso ser doador</a>
                 <a class="dropdown-item">Para aonde meu sangue vai</a>
