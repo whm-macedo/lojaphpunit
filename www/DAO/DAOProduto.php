@@ -21,7 +21,8 @@ class DAOProduto{
         $con->bindValue(":imagem", $produto->getImagem());        
         $con->bindValue(":categoria", $produto->getCategoria()->getPk_categoria());
         $con->execute();
-
+        $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
+        $pdo->commit();
         return "PRODUTO SALVO COM SUCESSO";
     }catch (\Exception $e) {
         $this->lastId = 0;
@@ -96,5 +97,13 @@ class DAOProduto{
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
         return "Excluído Todos com sucesso";
+    }
+
+    public function deleteFromId($id)
+    {
+        $sql = "DELETE FROM produto WHERE pk_produto = {$id}";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído com sucesso";
     }
 }

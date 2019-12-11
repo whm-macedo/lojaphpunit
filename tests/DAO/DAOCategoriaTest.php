@@ -5,13 +5,7 @@ use LOJA\DAO\DAOCategoria;
 
 class DAOCategoriaTests extends TestCase{
 
-    /**
-     * @before
-     */
-    public function setUpDeleteAll(){
-        $DAO = new DAOCategoria();
-        $DAO->deleteAll();
-    }
+ 
 
     public function testCadastro(){
         $categoria = new Categoria();

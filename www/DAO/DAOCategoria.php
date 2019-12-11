@@ -24,11 +24,11 @@ class DAOCategoria
 
             $con->bindValue(':nome', $categoria->getNome());
             $con->execute();
+            $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
+            $pdo->commit();
             return "Cadastrado com Sucesso!";
 
-            $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
-            $pdo->rollback(); // Finaliza a transação
-            return "Cadastrado com sucesso";
+
         } catch (\Exception $e) {
             $this->lastId = 0;
             $pdo->rollback();
@@ -68,5 +68,12 @@ class DAOCategoria
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
         return "Excluído Todos com sucesso";
+    }
+    public function deleteFromId($id)
+    {
+    $sql = "DELETE FROM categoria WHERE pk_categoria = {$id}";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído com sucesso";
     }
 }
