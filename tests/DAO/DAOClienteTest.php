@@ -17,6 +17,9 @@ class DAOClienteTests extends TestCase{
         $c = new Cliente();
         //$c->setId();
         
+
+        //Ordem dos testes
+        //Dados
         $c->setNome('Daniel');
         $c->setTelefone('(21)1234-2136');
         $c->setEmail('daniel@gmail.com');
@@ -26,9 +29,15 @@ class DAOClienteTests extends TestCase{
         $c->setCep('21514-369');
         $c->setUf('rj');
         $c->setBairro('Campo Grande');
-
+        
+        //Execução
         $DAO = new DAOCliente();
-        $msg = $DAO->cadastrar($c);
-        $this->assertEquals($msg, "Cadastrado com sucesso");
+        $result = $DAO->cadastrar($c);
+        
+        //Testa Resultados
+        $this->assertEquals($result, "Cadastrado com sucesso");
+
+        // Remove os dados gerados (opcional) para deixar o banco organizado
+        $DAO->deleteFromId($DAO->lastId);
     }
 }

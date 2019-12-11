@@ -5,11 +5,17 @@ use LOJA\Model\Conexao;
 use LOJA\Model\Produto;
 
 class DAOProduto{
+    public $lastId;
 
     public function cadastrar(Produto $produto){
-        $sql = "INSERT INTO produto VALUES (default, :nome, :preco, :imagem, :categoria)";
+
+        $pdo = Conexao::getInstance();
+        $pdo->beginTransaction();
+
+        try{
+
+        $con = $pdo->prepare("INSERT INTO produto VALUES (default, :nome, :preco, :imagem, :categoria)");
         
-        $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":nome", $produto->getNome());
         $con->bindValue(":preco", $produto->getPreco());
         $con->bindValue(":imagem", $produto->getImagem());        
@@ -17,7 +23,13 @@ class DAOProduto{
         $con->execute();
 
         return "PRODUTO SALVO COM SUCESSO";
+    }catch (\Exception $e) {
+        $this->lastId = 0;
+        $pdo->rollback();
+        return "Erro ao cadastrar";
     }
+}
+
     public function listaProduto(){
         $sql = "SELECT
             produto.nome, 
@@ -86,4 +98,3 @@ class DAOProduto{
         return "Excluído Todos com sucesso";
     }
 }
-?>

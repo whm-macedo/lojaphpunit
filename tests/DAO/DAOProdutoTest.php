@@ -4,7 +4,7 @@ use LOJA\Model\Produto;
 use LOJA\Model\Categoria;
 use LOJA\DAO\DAOProduto;
 
-class DAOCategoriaTests extends TestCase{
+class DAOProdutoTests extends TestCase{
 
     /**
      * @before
@@ -20,11 +20,12 @@ class DAOCategoriaTests extends TestCase{
         
         $produto->setNome('Camisa');
         $produto->setPreco('25.00');
-        $produto->setCategoria('teste');
         $produto->setImagem('camisa.jpg');
+        $produto->setCategoria('teste');
+        
 
         $categoria = new Categoria();
-        $categoria->setPk_categoria(63); // id da categoria no banco de dados
+        $categoria->setPk_categoria(81); // id da categoria no banco de dados
         $produto->setCategoria($categoria);
 
 

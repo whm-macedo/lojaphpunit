@@ -7,6 +7,8 @@ use LOJA\Model\Cliente;
 
 class DAOCliente
 {
+    public $lastId;
+
     public function cadastrar(Cliente $cliente)
     {
 
@@ -30,10 +32,11 @@ class DAOCliente
             $con->bindValue(":bairro", $cliente->getBairro());
             $con->execute();
 
-            $lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
+            $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
             $pdo->rollback(); // Finaliza a transação
             return "Cadastrado com sucesso";
         } catch (\Exception $e) {
+            $this->lastId = 0;
             $pdo->rollback();
             return "Erro ao cadastrar";
         }
@@ -69,5 +72,12 @@ class DAOCliente
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
         return "Excluído Todos com sucesso";
+    }
+    public function deleteFromId($id)
+    {
+    $sql = "DELETE FROM cliente WHERE pk_cliente = {$id}";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+        return "Excluído com sucesso";
     }
 }

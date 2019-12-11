@@ -1,41 +1,69 @@
 <?php
 
 namespace LOJA\DAO;
+
 use LOJA\Model\Conexao;
 use LOJA\Model\Categoria;
 
-class DAOCategoria{
-    public function cadastrarCategoria(Categoria $categoria){
-        $sql = "INSERT INTO categoria VALUES (default, :nome)"; 
-        $con = conexao::getInstance()->prepare($sql);
-        $con->bindValue(':nome', $categoria->getNome());
-        $con->execute();
-        return "Cadastrado com Sucesso!";
+//Inserir o beginTransaction
+// Utilizar o $lastid
+//Realizar o testa Daocategorai
+
+class DAOCategoria
+{
+
+    public $lastId;
+
+    public function cadastrarCategoria(Categoria $categoria)
+    {
+        $pdo = Conexao::getInstance();
+        $pdo->beginTransaction();
+
+        try {
+            $con = $pdo->prepare("INSERT INTO categoria VALUES (default, :nome)");
+
+            $con->bindValue(':nome', $categoria->getNome());
+            $con->execute();
+            return "Cadastrado com Sucesso!";
+
+            $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
+            $pdo->rollback(); // Finaliza a transação
+            return "Cadastrado com sucesso";
+        } catch (\Exception $e) {
+            $this->lastId = 0;
+            $pdo->rollback();
+            return "Erro ao cadastrar";
+        }
     }
-    public function listaCategoria(){
+
+
+    public function listaCategoria()
+    {
         $sql = "SELECT * FROM categoria";
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
 
         $lista = array();
 
-        while($categoria = $con->fetch(\PDO::FETCH_ASSOC)){
+        while ($categoria = $con->fetch(\PDO::FETCH_ASSOC)) {
             $lista[] = $categoria;
         }
         return $lista;
-    } 
-    public function buscarPorId($id){
-        $sql ="SELECT * FROM categoria WHERE pk_categoria = :id";
+    }
+    public function buscarPorId($id)
+    {
+        $sql = "SELECT * FROM categoria WHERE pk_categoria = :id";
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":id", $id);
         $con->execute();
 
         $categoria = new Categoria();
         $categoria = $con->fetch(\PDO::FETCH_ASSOC);
-       // print_r($usuario); //testar saida
+        // print_r($usuario); //testar saida
         return $categoria;
-    } 
-    public function deleteAll(){
+    }
+    public function deleteAll()
+    {
         $sql = "DELETE FROM categoria";
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
