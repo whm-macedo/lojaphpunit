@@ -1,10 +1,10 @@
 <?php 
-   
+   use LOJA\includes\Config;
     require "includes/autoload.php";
     require "config/Constante.php";
     session_start();
     
-
+   
     
     // capturando os dados da url
     // Ex.: http://localhost/lojavirtual/admin/departamento/cadastrar/listar
@@ -13,8 +13,9 @@
 
     @$router = $_GET['model'].$_GET['action'];
     // router = departamento/cadastrar/listar
-
     $view = "";
+    $config = new Config();
+    $url = $config->url;
 
     // config
     //$url = "http://localhost/lojaphpunit/src/";
