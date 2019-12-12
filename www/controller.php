@@ -151,6 +151,11 @@
         case 'carrinho':
             $view = 'carrinho.php';
         break;
+
+        case 'pedidofinalizar'://////////////////////
+         $obj = new \LOJA\API\PedidoCadastrar;////////////////////////
+            $view = 'home.php';// PAGINA LOGIN CLIENTE <-------------//////
+        break;
         
         case 'comofunciona':
             $view = 'como-funciona.php';
