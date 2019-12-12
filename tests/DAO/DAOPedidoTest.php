@@ -31,11 +31,11 @@ class DAOPedidoTests extends TestCase{
         $this->categoria->setPk_categoria($DAO->lastId);
 
         // Cria um novo produto
-        $produto = new Produto();
-        $produto->setNome('Televisão');
-        $produto->setPreco(2600);
-        $produto->setImagem('camisa.jpg');
-        $produto->setCategoria($this->categoria);
+        $this->produto = new Produto();
+        $this->produto->setNome('Televisão');
+        $this->produto->setPreco(20.00);
+        $this->produto->setImagem('camisa.jpg');
+        $this->produto->setCategoria($this->categoria);
 
         $DAO2 = new DAOProduto();
         $result = $DAO2->cadastrar($this->produto);
@@ -46,7 +46,7 @@ class DAOPedidoTests extends TestCase{
         $this->cliente->setNome('Daniel');
         $this->cliente->setTelefone('(21)1234-2136');
         $this->cliente->setEmail('daniel@gmail.com');
-        $this->cliente->setCpf('123.456.789-10');
+        $this->cliente->setCpf('132.463.337-93');
         $this->cliente->setRua('lomas');
         $this->cliente->setComplemento('predio');
         $this->cliente->setCep('21514-369');
@@ -55,10 +55,10 @@ class DAOPedidoTests extends TestCase{
 
         $DAO3 = new DAOCliente(); 
         $result = $DAO3->cadastrar($this->cliente);
-        $this->cliente->setId($DAO3->lastId);
+        $this->cliente->setPk_cliente($DAO3->lastId);
 
         $this->carrinho = new Carrinho();
-        $this->carrinho->addItem($this->produto->getId());
+        $this->carrinho->addItem($this->produto->getPk_produto());
     }
     public function testCadastro(){  // testa o cadastro do produto
         $obj = new Pedido();

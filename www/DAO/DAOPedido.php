@@ -12,19 +12,20 @@ class DAOPedido{
         $pdo->beginTransaction();
 
         try{
+            
             $con = $pdo->prepare("INSERT INTO pedido VALUES (default, :data_pedido, :frete, :dias, :fk_cliente)");
             $con->bindValue(":data_pedido", $pedido->getData());
             $con->bindValue(":frete", $pedido->getFrete());
             $con->bindValue(":dias", $pedido->getDias());
-            $con->bindValue(":fk_cliente", $pedido->getCliente()->getId());
+            $con->bindValue(":fk_cliente", $pedido->getCliente()->getPk_cliente());
             $con->execute();
             $lastId = $pdo->lastInsertId();
 
-            $con2 = $pdo->prepare("INSERT INTO item VALUES (:fk_produto, :fk_pedido, :quantidade)" );
+            $con2 = $pdo->prepare("INSERT INTO item VALUES (:quantidade, :fk_produto, :fk_pedido)" );
 
             foreach ($carrinho->getItems() as $item){
-                print_r($item->getProduto()->getId());
-                $con2->bindValue(":fk_produto", $item->getProduto()->getId());
+
+                $con2->bindValue(":fk_produto", $item->getProduto()->getPk_produto());
                 $con2->bindValue(":fk_pedido", $lastId);
                 $con2->bindValue(":quantidade", $item->getQuantidade());
                 $con2->execute();

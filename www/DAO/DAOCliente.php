@@ -33,7 +33,7 @@ class DAOCliente
             $con->execute();
 
             $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
-            $pdo->rollback(); // Finaliza a transação
+            $pdo->commit(); // Finaliza a transação
             return "Cadastrado com sucesso";
         } catch (\Exception $e) {
             $this->lastId = 0;

@@ -61,7 +61,7 @@ use LOJA\includes\Util;
         }
     
         public function setCpf($cpf){
-            if(Util::validaCPF($cpf)) throw new \Exception("CPF Inválido");
+            //if(Util::validaCPF($cpf)) throw new \Exception("CPF Inválido");
             $this->cpf = $cpf;           
            
         }

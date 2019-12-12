@@ -4,7 +4,7 @@ use LOJA\Model\Cliente;
 
 // pk_pedido data_pedido frete dias fk_cliente
 class Pedido{
-    private $id;
+    private $pk_pedido ;
     private $data;
     private $frete;
     private $dias;
@@ -13,12 +13,12 @@ class Pedido{
     public function __construct(){
         
     }
-    public function getId(){
+    public function getPk_pedido (){
 		return $this->id;
 	}
 
-	public function setId($id){
-		$this->id = $id;
+	public function setPk_pedido ($pk_pedido){
+		$this->pk_pedido = $pk_pedido;
 	}
 
 	public function getData(){
