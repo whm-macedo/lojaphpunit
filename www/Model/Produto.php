@@ -6,8 +6,8 @@ namespace LOJA\Model;
         private $pk_produto;
         private $nome;
         private $preco;
-        private $categoria;
         private $imagem;
+        private $categoria;
 
         public function __construct(){
                 
