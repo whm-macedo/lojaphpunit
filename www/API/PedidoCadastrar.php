@@ -22,9 +22,9 @@ class PedidoCadastrar{
             $obj->setCliente($c);
 
             $DAO = new DAOPedido();
-            $this->msg =$DAO->cadastrar($obj->$_SESSION['carrinho']);
+            $this->msg =$DAO->cadastrar($obj,$_SESSION['carrinho']);
                 
-                echo $this->msg;
+       
         }catch(Exception $e){
             $this->msg = $e->getMessage();
 
