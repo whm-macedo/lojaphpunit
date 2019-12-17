@@ -152,9 +152,10 @@
             $view = 'carrinho.php';
         break;
 
-        case 'pedidofinalizar'://////////////////////
-         $obj = new \LOJA\API\PedidoCadastrar;////////////////////////
-            $view = 'home.php';// PAGINA LOGIN CLIENTE <-------------//////
+        case 'pedidofinalizar':
+            \LOJA\includes\Seguranca::restritoUsuario();
+            $obj = new \LOJA\API\PedidoCadastrar;
+            $view = 'form-login-cliente.php';// PAGINA LOGIN CLIENTE <-------------//////
         break;
         
         case 'comofunciona':

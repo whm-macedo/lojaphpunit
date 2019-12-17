@@ -117,6 +117,10 @@
             echo "<p>Entrega: R$ ".$frete->getPrazoEntrega()." dias</p>";
         }
     ?>
+
+<div class="col-md-12 mt-5">
+            <a href="<?php echo BASEURL. "cliente/cadastrar"; ?>" class="btn btn-danger">Finalizar Pedido</a>
+        </div>
 </form>
 
 <?php include "footer.php" ?>
