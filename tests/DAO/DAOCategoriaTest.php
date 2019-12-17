@@ -13,8 +13,13 @@ class DAOCategoriaTests extends TestCase{
         
         $categoria->setNome('Camisa');
        
+        // Cria uma nova Categoria para teste e atribui a $categoria
         $DAO = new DAOCategoria();
         $msg = $DAO->cadastrarCategoria($categoria);
-        $this->assertEquals($msg, "Cadastrado com Sucesso!");
+        $this->assertEquals($msg,"Cadastrado com Sucesso!");
+
+        //$this->categoria->setPk_categoria($DAO->lastId);
+
+
     }
 }

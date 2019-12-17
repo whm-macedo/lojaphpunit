@@ -38,8 +38,12 @@ namespace LOJA\Model;
         }
     
         public function setPreco($preco){
-            
+            if (!empty($preco)) {
                 $this->preco = $preco;
+            }else{
+                throw new \Exception('Preço Inválido');                
+            } 
+            
 
             
         }

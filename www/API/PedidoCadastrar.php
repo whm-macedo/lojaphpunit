@@ -11,8 +11,8 @@ class PedidoCadastrar{
     function __construct(){
         try{
             $c = new Cliente();
-            $c->setPk_cliente(1); //isere um id ja existente
-            $c->setNome('william');
+            $c->setPk_cliente($_SESSION['clienteid']); //isere um id ja existente
+            $c->setNome($_SESSION['clientenome']);
 
             $obj = new Pedido();
             //$c->setPk_pedido();

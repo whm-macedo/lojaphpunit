@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+            colors="true"
+            verbose="true"
+            stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Testsuite">
+            <file>tests/DAO/DAOCategoriaTest.php </file>
+            <file>tests/DAO/DAOCLienteTest.php </file>
+            <file>tests/DAO/DAOFornecedorTest.php </file>
+            <file>tests/DAO/DAOPedidoTest.php </file>
+            <file>tests/DAO/DAOProdutoTest.php </file>
+            <file>tests/DAO/DAOUsuarioTest.php </file>
+            <file>tests/API/PedidoCadastrarTest.php </file>
+            <file>tests/Model/ClienteTest.php </file>
+            <file>tests/Model/ProdutoTest.php </file>
+        </testsuite> 
+    </testsuites>
+
+</phpunit>

@@ -5,13 +5,13 @@ use LOJA\DAO\DAOCliente;
 
 class DAOClienteTests extends TestCase{
 
-    /**
-     * @before
-     */
-    public function setUpDeleteAll(){
-        $DAO = new DAOCliente();
-        $DAO->deleteAll();
-    }
+    // /**
+    //  * @before
+    //  */
+    // public function setUpDeleteAll(){
+    //     $DAO = new DAOCliente();
+    //     $DAO->deleteAll();
+    // }
 
     public function testCadastro(){
         $c = new Cliente();
@@ -38,6 +38,6 @@ class DAOClienteTests extends TestCase{
         $this->assertEquals($result, "Cadastrado com sucesso");
 
         // Remove os dados gerados (opcional) para deixar o banco organizado
-        $DAO->deleteFromId($DAO->lastId);
+        // $DAO->deleteFromId($DAO->lastId);
     }
 }

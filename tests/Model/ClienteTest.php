@@ -28,14 +28,14 @@ class ClienteTest extends TestCase{
         
         $c = new Cliente();
         $c->setNome("");
-    }
+    }/*
     public function testErrorCpf(){
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('CPF Inválido');
         
         $d = new Cliente();
         $d->setCpf("058.612.387.31");
-    }
+    }*/
 }
 
 //regras
