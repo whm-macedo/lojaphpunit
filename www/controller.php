@@ -76,7 +76,16 @@
             $lista = $obj->lista;
             $view = "lista-produto.php";
         break;
-
+        
+        
+        case 'logincliente':
+        $obj = new \LOJA\API\ClienteLogar;
+        $msg = $obj->msg;
+        $view = 'form-login-cliente.php';
+        break;
+        case 'painelcliente':
+            $view = "painel-cliente.php";
+        break;
         case 'usuariocadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\UsuarioCadastrar;
@@ -120,7 +129,7 @@
             $msg = $obj->msg;
             $view = 'form-login-adm.php';
         break;
-
+       
         case 'painellogoff':
             $obj = new \LOJA\API\UsuarioLogoff;
             $view = 'form-login-adm.php';

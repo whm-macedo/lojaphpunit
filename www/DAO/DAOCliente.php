@@ -17,7 +17,7 @@ class DAOCliente
 
         try {
             $con = $pdo->prepare(
-                "INSERT INTO cliente VALUES (default, :nome, :telefone, :cpf,:email, :rua, :complemento, :cep, :uf, :bairro)"
+                "INSERT INTO cliente VALUES (default, :nome, :telefone, :cpf,:email, :rua, :complemento, :cep, :uf, :bairro, :senha)"
             );
 
  
@@ -30,6 +30,7 @@ class DAOCliente
             $con->bindValue(":cep", $cliente->getCep());
             $con->bindValue(":uf", $cliente->getUf());
             $con->bindValue(":bairro", $cliente->getBairro());
+            $con->bindValue(":senha", $cliente->getSenha());
             $con->execute();
 
             $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
@@ -79,5 +80,19 @@ class DAOCliente
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
         return "Excluído com sucesso";
+    }
+    public function buscaPorNomeSenha(Cliente $cliente){
+        $sql = "SELECT pk_cliente as id,nome FROM cliente WHERE nome = :nome and senha = :senha";
+
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":nome", $cliente->getNome());
+        $con->bindValue(":senha", $cliente->getSenha());
+        $result = $con->execute();
+
+       
+        $obj = new Cliente();
+        $obj= $con->fetch(\PDO::FETCH_ASSOC);
+       
+        return $obj;
     }
 }

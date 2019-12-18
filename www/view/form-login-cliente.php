@@ -1,46 +1,62 @@
 <?php
 
-  include "view/header.php";
-  
+include "view/header.php";
+
 ?>
+<div class="row  d-flex justify-content-center mt-5">
+</div>
+<div class="col-md-12 d-flex justify-content-center">
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+      <form class="form-horizontal " method="post" action="<?php echo $url; ?>/painel/cliente">
+        <fieldset>
 
-<form class="form-horizontal" method="post" action="">
-    <fieldset>
+          <!-- Form Name -->
 
-    <!-- Form Name -->
-    <legend>Login Cliente</legend>
+          <legend class="d-flex justify-content-center ml-4 ">
+            <figure>
+              <img src="<?php echo DIRIMG; ?>doe-final.png" Class="w-50 d-flex justify-content-center ml-5" alt="">
+              <legend>CLIENTE</legend>
+            </figure>
+          </legend>
 
-    <!-- Text input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="textinput">Nome</label>  
-    <div class="col-md-4">
-    <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required="">
-        
-    </div>
-    </div>
+          <!-- Text input-->
+          <div class="form-group formadm">
 
-    <!-- Text input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="senha">Senha</label>  
-    <div class="col-md-4">
-    <input id="senha" name="senha" type="passsword" placeholder="" class="form-control input-md" required="">
-        
-    </div>
-    </div>
+            <input id="nome" name="nome" type="text" placeholder="Usuario" class="form-control input-md" required="">
 
-    <!-- Button -->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="cadastrar"></label>
-    <div class="col-md-4">
-        <button id="cadastrar" name="cadastrar" class="btn btn-primary">logar</button>
-    </div>
-    </div>
 
-    </fieldset>
-</form>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group formadm">
+
+            <input id="senha" name="senha" type="password" placeholder="senha" class="form-control input-md" required="">
+
+
+          </div>
+
+          <div class="form-group ">
+            <label class=" control-label" for="cadastrar"></label>
+
+            <button id="login" style="width:388px" name="login" class="btn btn-primary formadm">Entrar</button>
+            <a class="d-flex justify-content-center " href="">
+              <p>Não tenho uma conta</p>
+            </a>
+          </div>
+
+      </form>
+    </div>
+    
+
+
+    </div>
+  </div>
+</div>
+</div>
 
 <?php
 
-  include "view/footer.php";
-  
+include "view/footer.php";
+
 ?>

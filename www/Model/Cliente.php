@@ -13,6 +13,7 @@ use LOJA\includes\Util;
         private $cep;
         private $uf;
         private $bairro;
+        private $senha;
 
         public function __construct(){
             
@@ -104,6 +105,13 @@ use LOJA\includes\Util;
     
         public function setBairro($bairro){
             $this->bairro = $bairro;
+        }
+        public function getSenha(){
+            return $this->senha;
+        }
+    
+        public function setSenha($senha){
+            $this->senha = $senha;
         }
     }
 ?>
