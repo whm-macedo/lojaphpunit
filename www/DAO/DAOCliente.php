@@ -95,4 +95,21 @@ class DAOCliente
        
         return $obj;
     }
+    public function buscaPorEmailSenha(Cliente $cliente){
+        $sql = "SELECT pk_cliente as id, nome 
+        FROM cliente 
+        WHERE email = :email
+        AND senha = :senha";
+
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":email", $cliente->getEmail());
+        $con->bindValue(":senha", $cliente->getSenha());
+        $result = $con->execute();
+
+       
+        $obj = new Cliente();
+        $obj= $con->fetch(\PDO::FETCH_ASSOC);
+       
+        return $obj;
+    }
 }

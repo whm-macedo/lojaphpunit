@@ -112,15 +112,24 @@
     <input type="text" size="20" name="cep">
     <button>Calcular</button>
     <?php
-        if (isset($_POST['cep'])) {
+        if(isset($_POST['cep'])){
             echo "<p>Preço: R$ ".$frete->getValor()."</p>";
             echo "<p>Entrega: R$ ".$frete->getPrazoEntrega()." dias</p>";
+            echo '<a href="'.$url.'/pedido/finalizar" class="btn btn-success">Finalizar</a>';
+            
+        }else{
+            echo "<p>Insira o CEP</p>";
+            echo '<a href="'.$url.'/pedido/finalizar" class="btn btn-success disabled">Finalizar</a>';
         }
     ?>
 
-<div class="col-md-12 mt-5">
-            <a href="<?php echo BASEURL. "cliente/cadastrar"; ?>" class="btn btn-danger">Finalizar Pedido</a>
-        </div>
+<!-- <div class="col-md-12 mt-5">
+
+            <a href="<?php echo BASEURL. "pedido/finalizar"; ?>" class="btn btn-danger">Finalizar Pedido</a>
+        </div> -->
 </form>
 
+
+
 <?php include "footer.php" ?>
+

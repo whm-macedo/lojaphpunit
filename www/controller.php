@@ -125,6 +125,7 @@
         break;
 
         case 'loginadm':
+            
             $obj = new \LOJA\API\UsuarioLogar;
             $msg = $obj->msg;
             $view = 'form-login-adm.php';
@@ -162,9 +163,9 @@
         break;
 
         case 'pedidofinalizar':
-            \LOJA\includes\Seguranca::restritoUsuario();
+            //\LOJA\includes\Seguranca::restritoUsuario();
             $obj = new \LOJA\API\PedidoCadastrar;
-            $view = 'form-login-cliente.php';// PAGINA LOGIN CLIENTE <-------------//////
+            
         break;
         
         case 'comofunciona':

@@ -13,6 +13,7 @@ if ($_POST) {
     try {
         $obj = new Cliente();
         $obj-> setNome($_POST['nome']);
+        $obj-> setSenha($_POST['senha']);
         $obj-> setTelefone($_POST['telefone']);
         $obj-> setEmail($_POST['email']);
         $obj-> setCpf($_POST['cpf']);

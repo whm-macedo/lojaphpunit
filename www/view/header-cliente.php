@@ -41,7 +41,7 @@
         <div class="col-md-4 col-sm-3 d-flex justify-content-center ">
 
             <nav class="navbar navbar-light ">
-                <a class="navbar-brand" href="<?php echo BASEURL; ?>painel/adm">
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>painel/cliente">
                 <i class="fas fa-chevron-right"></i>
                     Voltar
                 </a>
@@ -53,7 +53,7 @@
                 </a>
             </nav>
             <nav class="navbar navbar-light ">
-                <a class="navbar-brand" href="<?php echo BASEURL; ?>login/adm">
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>login/cliente">
                 <i class="fas fa-sign-out-alt"></i>
                     Logoff
                 </a>
