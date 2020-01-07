@@ -9,6 +9,7 @@ class PedidoCadastrar{
     public $msg;
 
     function __construct(){
+        
         try{
             $c = new Cliente();
             $c->setPk_cliente($_SESSION['clienteid']); //isere um id ja existente
@@ -23,10 +24,12 @@ class PedidoCadastrar{
 
             $DAO = new DAOPedido();
             $this->msg =$DAO->cadastrar($obj,$_SESSION['carrinho']);
-                
+            header("location:".BASEURL."painel/cliente");
        
-        }catch(Exception $e){
+        }catch(\Exception $e){
             $this->msg = $e->getMessage();
+            echo $this->msg;
+            header("location:".BASEURL."login/cliente");
 
         }
         }
