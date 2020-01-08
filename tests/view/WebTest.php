@@ -23,10 +23,10 @@ class WebTest extends TestCase{
         $driver->get('http://localhost/lojaphpunit/www/categoria/cadastrar');
         $driver->findElement(WebDriverBy::id('nome'))->sendKeys('I want to send this');
 
-        $submitElement = $driver->findElement(WebDriverBy::id('singlebutton'));
+        $submitElement = $driver->findElement(WebDriverBy::id('cadastrarCategoria'));
         $submitElement->click();
         $msg = $driver->findElement(WebDriverBy::id('msg'))->getText();
-        $this->assertEquals($msg, "Cadastrado com sucesso");
-// brasil
+        $this->assertEquals($msg, "Cadastrado com Sucesso!");
+// brasil penta campeao
     }
 }
