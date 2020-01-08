@@ -6,5 +6,8 @@
         "psr-4":{
             "LOJA\\" : "www/"
         }
+    },
+    "require": {
+        "facebook/webdriver": "^1.7"
     }
 }

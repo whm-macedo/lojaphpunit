@@ -24,7 +24,7 @@
     switch($router){
 
         case 'categoriacadastrar':
-            \LOJA\includes\Seguranca::restritoAdm();            
+            //\LOJA\includes\Seguranca::restritoAdm();            
             $obj = new \LOJA\API\CategoriaCadastrar;
             $msg = $obj->msg;
             $view = "form-categoria.php";
