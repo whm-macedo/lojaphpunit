@@ -22,9 +22,9 @@
     //$url = "http://doemais.web70113.uni5.net/";
 
     switch($router){
-
+        /**CATEGORIA */
         case 'categoriacadastrar':
-            //\LOJA\includes\Seguranca::restritoAdm();            
+            \LOJA\includes\Seguranca::restritoAdm();            
             $obj = new \LOJA\API\CategoriaCadastrar;
             $msg = $obj->msg;
             $view = "form-categoria.php";
@@ -41,7 +41,10 @@
             $categoria = $obj->dados;
             $view = "visualiza-categoria.php";
         break;
+        /**CATEGORIA */
 
+
+        /**CLIENTE */
         case 'clientecadastrar':        
             $obj = new \LOJA\API\ClienteCadastrar;
             $msg = $obj->msg;
@@ -59,7 +62,9 @@
             $cliente = $obj->cliente;
             $view = "visualiza-cliente.php";
         break;
+        /**CLIENTE */
 
+        /**PROTUDOTOS */
         case 'produtocadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
         
@@ -76,16 +81,16 @@
             $lista = $obj->lista;
             $view = "lista-produto.php";
         break;
-        
-        
-        case 'logincliente':
-        $obj = new \LOJA\API\ClienteLogar;
-        $msg = $obj->msg;
-        $view = 'form-login-cliente.php';
+        case 'produtovisualizar':
+            $obj = new \LOJA\API\ProdutoVisualizar;            
+            $produto = $obj->produto;
+            echo $produto->getNome();
+            $view = "unico-produto.php";
+
         break;
-        case 'painelcliente':
-            $view = "painel-cliente.php";
-        break;
+        /**PROTUDOTOS */
+        
+        /**USUARIO */
         case 'usuariocadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\UsuarioCadastrar;
@@ -104,7 +109,9 @@
             $usuario = $obj->dados;
             $view = "visualiza-usuario.php";
         break;
+        /**USUARIO */
 
+        /**FORNECEDOR */
         case 'fornecedorcadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
             $obj = new LOJA\API\FornecedorCadastrar;
@@ -123,35 +130,13 @@
             $fornecedor = $obj->dado;            
             $view = "visualiza-fornecedor.php";
         break;
+        /**FORNECEDOR */
 
-        case 'loginadm':
-            
-            $obj = new \LOJA\API\UsuarioLogar;
-            $msg = $obj->msg;
-            $view = 'form-login-adm.php';
-        break;
-       
-        case 'painellogoff':
-            $obj = new \LOJA\API\UsuarioLogoff;
-            $view = 'form-login-adm.php';
-        break;
-        case 'paineladm':
-            //\LOJA\includes\Seguranca::restritoAdm();
-            $view = 'painel-adm.php';
-        break;
-
-        case 'projeto':
-            $view = 'projeto.php';
-        break;
-
-        case 'mapas':
-            $view = 'lista-mapa.php';
-        break;
-
+        /**CARRINHO */
         case 'carrinhoadicionar':
-            $obj = new \LOJA\API\CarrinhoVisualizar;
-            
-            $view = 'carrinho.php';
+        $obj = new \LOJA\API\CarrinhoVisualizar;
+        
+        $view = 'carrinho.php';
         break;
         case 'carrinhoremover':
             $obj = new \LOJA\API\CarrinhoRemover;
@@ -161,6 +146,68 @@
         case 'carrinho':
             $view = 'carrinho.php';
         break;
+        /**CARRINHO */
+
+                
+        /**LOGIN ADMIN */
+        case 'loginadm':            
+            $obj = new \LOJA\API\UsuarioLogar;
+            $msg = $obj->msg;
+            $view = 'form-login-adm.php';
+        break;
+        /**LOGIN ADMIN */
+
+
+        /**LOGIN CLIENTE */
+        case 'logincliente':
+        $obj = new \LOJA\API\ClienteLogar;
+        $msg = $obj->msg;
+        $view = 'form-login-cliente.php';
+        break;
+        /**LOGIN  CLIENTE*/
+
+        /**PAINEL CLIENTE */
+        case 'painelcliente':
+            $view = "painel-cliente.php";
+        break;
+        /**PAINEL CLIENTE */
+        
+       /**PAINEL LOGOFF */
+        case 'painellogoff':
+            $obj = new \LOJA\API\UsuarioLogoff;
+            $view = 'form-login-adm.php';
+        break;
+        /**PAINEL LOGOFF */
+
+        /**PAINEL LOGOFF */
+        case 'clientelogoff':
+        $obj = new \LOJA\API\ClienteLogoff;
+        $view = 'form-login-cliente.php';
+        break;
+        /**PAINEL LOGOFF */
+        
+
+        /**PAINEL LOGOFF */
+        case 'usuariologoff':
+        $obj = new \LOJA\API\UsuarioLogoff;
+        $view = 'form-login-adm.php';
+        break;
+        /**PAINEL LOGOFF */
+    
+        /**PAINEL ADM */
+        case 'paineladm':
+            //\LOJA\includes\Seguranca::restritoAdm();
+            $view = 'painel-adm.php';
+        break;
+        /**PAINEL ADM */
+
+        case 'projeto':
+            $view = 'projeto.php';
+        break;
+
+        case 'mapas':
+            $view = 'lista-mapa.php';
+        break; 
 
         case 'pedidofinalizar':
             //\LOJA\includes\Seguranca::restritoUsuario();

@@ -52,15 +52,24 @@
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center">
       <a href="<?php echo BASEURL; ?>login/cliente"> <i class="fas fa-user icon">
-
-          <?php
-          if (isset($_SESSION['clientenome']))
-            echo $_SESSION['clientenome'];
-          else
+       
+       <?php 
+          if(isset($_SESSION['clientenome'])){
+            echo $_SESSION['clientenome'];                        
+        
+          }else{
             echo "Login";
-          ?>
+          }
+       ?>
 
-        </i></a>
+      </i></a>
+
+
+      <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
+      <i class="fas fa-window-close icon"></i>
+                   
+      </a>
+      
 
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">

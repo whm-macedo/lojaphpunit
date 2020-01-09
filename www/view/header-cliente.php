@@ -53,7 +53,7 @@
                 </a>
             </nav>
             <nav class="navbar navbar-light ">
-                <a class="navbar-brand" href="<?php echo BASEURL; ?>login/cliente">
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
                 <i class="fas fa-sign-out-alt"></i>
                     Logoff
                 </a>

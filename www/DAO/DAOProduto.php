@@ -77,23 +77,26 @@ class DAOProduto{
         }
         return $lista;
     }
-    public function buscaPorId($id){
+    public function buscarPorId($id){
         $sql = "SELECT * FROM produto WHERE pk_produto = :id";
+        
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":id", $id);
         $con->execute();
 
         $obj = $con->fetch(\PDO::FETCH_ASSOC);
-       
+        
         $produto = new Produto();
         $produto->setPk_produto($obj['pk_produto']);
         $produto->setNome($obj['nome']);
         $produto->setPreco($obj['preco']);
         $produto->setPreco($obj['categoria']);
         $produto->setImagem($obj['imagem']);
-        
+       
         return $produto;
     }
+
+
     public function deleteAll(){
         $sql = "DELETE FROM produto";
         $con = Conexao::getInstance()->prepare($sql);
