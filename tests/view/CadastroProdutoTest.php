@@ -1,27 +1,4 @@
-# Selenium 3.8
-https://selenium-release.storage.googleapis.com/index.html?path=3.8/
-
-# Executar servidor Selenium
-java -jar selenium-server-standalone-3.8.1.jar -enablePassThrough false
-
-# Testar Servidor
-http://localhost:4444/wd/hub
-  
-# Instalação do Selenium para Composer
-composer require facebook/webdriver
-
-# Instação Driver para Firefox
-https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-win64.zip
-## Extrair para c:/geckodriver
-## Adicionar c:/geckodriver no PATH
-
-
-java -Dwebdriver.gecko.driver="C:\geckodriver\geckodriver.exe" -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -enablePassThrough false
-  
-  java -Dwebdriver.gecko.driver="C:\geckodriver\geckodriver.exe" -jar C:\Selenium\selenium-server-standalone-3.8.1.jar -enablePassThrough false -port 4445
-
-    
-    <?php
+<?php
 namespace Facebook\WebDriver\Remote;
 use Facebook\WebDriver\Interactions\WebDriverActions;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
@@ -30,10 +7,11 @@ use Facebook\WebDriver\WebDriverNavigation;
 use Facebook\WebDriver\WebDriverOptions;
 use Facebook\WebDriver\WebDriverWait;
 use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverSelect;
 use PHPUnit\Framework\TestCase;
 
 
-class CadastroProdutoTest extends TestCase
+class WebTestNewProduto extends TestCase
 {
     protected $webDriver;
     protected $url = 'https://www.google.com';
@@ -47,27 +25,38 @@ class CadastroProdutoTest extends TestCase
 
         $driver = RemoteWebDriver::create($host, DesiredCapabilities::firefox());
 
+        // LOGIN
         $driver->get('http://localhost/lojavirtual/www/login/adm');
-        $driver->findElement(WebDriverBy::id('nome'))->sendKeys("KaioAdmin");
-        $driver->findElement(WebDriverBy::id('senha'))->sendKeys("cerbero");
+        $driver->findElement(WebDriverBy::id('nome'))->sendKeys("daniel");
+        $driver->findElement(WebDriverBy::id('senha'))->sendKeys("123");
 
-        $submitElement = $driver->findElement(WebDriverBy::id('login'));
+        $submitElement = $driver->findElement(WebDriverBy::id('singlebutton'));
         $submitElement->click();
 
+        // PREENCHER NOME, PREÇO E DESCRIÇÃO
         $driver->get('http://localhost/lojavirtual/www/produto/cadastrar');
-        $driver->findElement(WebDriverBy::id('nome'))->sendKeys("NovoProduto");
-        $driver->findElement(WebDriverBy::id('preco'))->sendKeys("1919");
-        $driver->findElement(WebDriverBy::id('categoria'))->sendKeys("Camisa");
-        $driver->findElement(WebDriverBy::id('imagem'))->sendKeys("camisaNova.jpg");
+        $driver->findElement(WebDriverBy::id('nome'))->sendKeys("Produto Teste");
+        $driver->findElement(WebDriverBy::id('preco'))->sendKeys(20.5);
+        $driver->findElement(WebDriverBy::id('descricao'))->sendKeys(20.5);
+        
+        // Elemento Select
+        $departamentoElement = $driver->findElement(WebDriverBy::id('departamento'));
+        $select = new WebDriverSelect($departamentoElement);
+        $select->selectByIndex(1); // Ordem dos elementos no select
 
-        $submitElement = $driver->findElement(WebDriverBy::id('Cadastrar'));
+        // Elemento file
+        $fileInput = $driver->findElement(WebDriverBy::id('imagem'));
+        $fileInput->setFileDetector(new LocalFileDetector());
+        $fileInput->sendKeys("C:/xampp1/htdocs/lojavirtual/tests/View/xbox.jpg"); // Path da imagem
+
+        // Tenta cadastrar
+        $submitElement = $driver->findElement(WebDriverBy::id('singlebutton'));
         $submitElement->click();
 
+        // Verificar se msg é cadastrado com sucesso
         $msg = $driver->findElement(WebDriverBy::id('msg'))->getText();
-        
-        $this->assertEquals($msg, "PRODUTO SALVO COM SUCESSO");
-      
- 
+        $this->assertEquals($msg, "Cadastrado com sucesso");
+    
     }
 
 

@@ -9,7 +9,7 @@ use Facebook\WebDriver\WebDriverWait;
 use Facebook\WebDriver\WebDriverBy;
 use PHPUnit\Framework\TestCase;
 
-class WebTest extends TestCase{
+class CadastroClienteTest extends TestCase{
     protected $webDriver;
     protected $url = 'https://www.google.com';
     protected $googlesearchpage;

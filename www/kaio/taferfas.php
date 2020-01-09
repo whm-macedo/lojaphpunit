@@ -4,3 +4,6 @@ mudar o daocliente --- ok
 finalizar o pedido 
 pagamentos 
 verificar se ta logado 
+apagar tudo do login adm, exceto o form 
+menu de adm
+sobre falando sobre nos

@@ -14,18 +14,16 @@
       <li class="list-group-item"><i class="fas fa-sticky-note"></i> Acessorios</li>
     </ul>
 
-    <?php foreach ($lista as $produto) {
-      $linkRemove = BASEURL."carrinho/adicionar/" . $produto['id'];
-      ?>
+    
 
       <div class="col-sm-3 mb-3">
         <div class="card h-100 ">
-          <a href="#"><img class="card-img-top" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
+          <a href="#"><img class="card-img-top" src="<?php echo $produto->getImagem() ?>" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#"></a>
             </h4>
-            <h3><?php echo $produto['nome'] ?></h3>
+            <h3><?php echo $produto->getNome() ?></h3>
             <h5>R$: <?php echo number_format($produto['preco'], 2, ",", "."); ?></h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
             </p>
@@ -40,7 +38,7 @@
 
         </div>
       </div>
-    <?php } ?>
+    
 
   </div>
 

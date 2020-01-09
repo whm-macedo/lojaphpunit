@@ -17,11 +17,12 @@ class DAOCliente
 
         try {
             $con = $pdo->prepare(
-                "INSERT INTO cliente VALUES (default, :nome, :telefone, :cpf,:email, :rua, :complemento, :cep, :uf, :bairro, :senha)"
+                "INSERT INTO cliente VALUES (default, :nome, :senha, :telefone, :email, :cpf, :rua, :complemento, :cep, :uf, :bairro)"
             );
 
  
             $con->bindValue(":nome", $cliente->getNome());
+            $con->bindValue(":senha", $cliente->getSenha());
             $con->bindValue(":telefone", $cliente->getTelefone());
             $con->bindValue(":email", $cliente->getEmail());
             $con->bindValue(":cpf", $cliente->getCpf());
@@ -29,8 +30,7 @@ class DAOCliente
             $con->bindValue(":complemento", $cliente->getComplemento());
             $con->bindValue(":cep", $cliente->getCep());
             $con->bindValue(":uf", $cliente->getUf());
-            $con->bindValue(":bairro", $cliente->getBairro());
-            $con->bindValue(":senha", $cliente->getSenha());
+            $con->bindValue(":bairro", $cliente->getBairro());            
             $con->execute();
 
             $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
