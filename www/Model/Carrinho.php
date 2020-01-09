@@ -25,7 +25,7 @@ class Carrinho{
     {
         $dao = new DAOProduto();
         $obj = new Produto();
-        $obj = $dao->buscaPorId($id);
+        $obj = $dao->buscarPorId($id);
         
         if($obj->getPk_produto()){
             $item = new Item();
