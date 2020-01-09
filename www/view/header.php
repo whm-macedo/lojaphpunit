@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<?php echo DIRCSS; ?>bootstrap.css">
   <link rel="stylesheet" href="<?php echo DIRFAW; ?>all.css">
   <link rel="stylesheet" href="<?php echo DIRCSS; ?>style.css">
+  
   <title>DOE+</title>
 </head>
 
@@ -50,16 +51,16 @@
       </nav>
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-      <a href="<?php echo BASEURL; ?>login/cliente"> <i class="fas fa-user icon"> 
-        
-       <?php 
-              if(isset($_SESSION['clientenome']))
-                echo $_SESSION['clientenome']; 
-                else
-                echo "Login";
-              ?>
-      
-      </i></a>
+      <a href="<?php echo BASEURL; ?>login/cliente"> <i class="fas fa-user icon">
+
+          <?php
+          if (isset($_SESSION['clientenome']))
+            echo $_SESSION['clientenome'];
+          else
+            echo "Login";
+          ?>
+
+        </i></a>
 
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
@@ -67,50 +68,50 @@
 
     </div>
 
-      </div>
-</div>
-<hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
-<div class="row justify-content-center ">
-  <!-- <div class="col-md-12 d-flex "> -->
-  <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  "   >
- 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse catnav" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link"href="<?php echo BASEURL; ?>home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo BASEURL; ?>projeto">Projeto</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo BASEURL; ?>mapas">Mapas</a>
-      </li>
-      <!-- BOTAR PHP -->
-      <li class="nav-item dropdown "> 
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo BASEURL; ?>como/funciona">Como funciona</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item">Posso ser doador</a>
-                <a class="dropdown-item">Para aonde meu sangue vai</a>
-                <a class="dropdown-item">Quais pessoa seu ajudo</a>
-                <a class="dropdown-item">Depoimentos</a>
-              </div>
-            </li>
-       <!-- BOTAR PHP -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
-          Ser voluntario
-        </a>
-      </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
-            </li>
-    </ul>
-
   </div>
-  
+  </div>
+  <hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
+  <div class="row justify-content-center ">
+    <!-- <div class="col-md-12 d-flex "> -->
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  ">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse catnav" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="<?php echo BASEURL; ?>home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASEURL; ?>projeto">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASEURL; ?>mapas">Mapas</a>
+          </li>
+          <!-- BOTAR PHP -->
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo BASEURL; ?>como/funciona">Como funciona</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item">Posso ser doador</a>
+              <a class="dropdown-item">Para aonde meu sangue vai</a>
+              <a class="dropdown-item">Quais pessoa seu ajudo</a>
+              <a class="dropdown-item">Depoimentos</a>
+            </div>
+          </li>
+          <!-- BOTAR PHP -->
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
+              Ser voluntario
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
+          </li>
+        </ul>
+
+      </div>
+
   </div>
 
 
