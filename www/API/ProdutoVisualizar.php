@@ -19,5 +19,4 @@ class ProdutoVisualizar{
         }
     }
 }
-print_r($produto);
 ?>

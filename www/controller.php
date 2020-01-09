@@ -64,7 +64,7 @@
         break;
         /**CLIENTE */
 
-        /**PROTUDOTOS */
+        /**PRODUTOS */
         case 'produtocadastrar':
             \LOJA\includes\Seguranca::restritoAdm();
         
@@ -84,11 +84,11 @@
         case 'produtovisualizar':
             $obj = new \LOJA\API\ProdutoVisualizar;            
             $produto = $obj->produto;
-            echo $produto->getNome();
+            //echo $produto->getNome();
             $view = "unico-produto.php";
 
         break;
-        /**PROTUDOTOS */
+        /**PRODUTOS */
         
         /**USUARIO */
         case 'usuariocadastrar':

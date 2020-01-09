@@ -24,7 +24,7 @@
               <a href="#"></a>
             </h4>
             <h3><?php echo $produto->getNome() ?></h3>
-            <h5>R$: <?php echo number_format($produto['preco'], 2, ",", "."); ?></h5>
+            <h5>R$: <?php echo number_format($produto->getPreco(), 2, ",", "."); ?></h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
             </p>
           </div>
