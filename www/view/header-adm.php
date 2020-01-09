@@ -53,16 +53,25 @@
                 </a>
             </nav>
             <nav class="navbar navbar-light ">
-                <a class="navbar-brand" href="<?php echo BASEURL; ?>login/adm">
+                <a class="navbar-brand" href="<?php echo BASEURL; ?>usuario/logoff">
                 <i class="fas fa-sign-out-alt"></i>
                     Logoff
                 </a>
             </nav>
         </div>
         <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-            <a href=""></i></i></a>
+            <a href=""></i></i>    
+      </a>
 
         </div>
+        <?php 
+          if(isset($_SESSION['usuarionome'])){
+            echo $_SESSION['usuarionome'];                        
+        
+          }else{
+            echo "Login";
+          }
+       ?>
 
 
     </div>
