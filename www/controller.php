@@ -119,7 +119,7 @@
             $view = "lista-usuario.php";
         break;
         case 'usuariovisualizar':
-            \LOJA\includes\Seguranca::restritoAdm();
+            //\LOJA\includes\Seguranca::restritoAdm();
             $obj = new LOJA\API\UsuarioVisualizar;
             $usuario = $obj->dados;
             $view = "visualiza-usuario.php";

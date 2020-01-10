@@ -5,12 +5,10 @@ namespace LOJA\DAO;
 use LOJA\Model\Conexao;
 use LOJA\Model\Cliente;
 
-class DAOCliente
-{
+class DAOCliente{
     public $lastId;
 
-    public function cadastrar(Cliente $cliente)
-    {
+    public function cadastrar(Cliente $cliente){
 
         $pdo = Conexao::getInstance();
         $pdo->beginTransaction();
@@ -42,20 +40,24 @@ class DAOCliente
             return "Erro ao cadastrar";
         }
     }
+
+
     public function editarPorId($id)
     {
+        
         $cliente = new Cliente();
-        print_r($cliente);
+        //print_r($cliente);
         $pdo = Conexao::getInstance();
         $pdo->beginTransaction();
 
         try {
             $con = $pdo->prepare(
-                "UPDATE cliente SET (nome = :nome, senha = :senha, telefone = :telefone, email = :email, cpf = :cpf, rua = :rua, complemento = :complemento, cep = :cep, uf =:uf, bairro = :bairro) WHERE pk_cliente = :id 
-                "
+                'UPDATE cliente SET (nome = :nome, senha = :senha, telefone = :telefone, email = :email, cpf = :cpf, rua = :rua, complemento = :complemento, cep = :cep, uf =:uf, bairro = :bairro) WHERE pk_cliente = :id 
+                '
             );
+            //print_r($con);
 
-            $con->bindParam(":nome", $cliente->getNome());
+            $con->bindValue(":nome", $cliente->getNome());
             $con->bindValue(":senha", $cliente->getSenha());
             $con->bindValue(":telefone", $cliente->getTelefone());
             $con->bindValue(":email", $cliente->getEmail());

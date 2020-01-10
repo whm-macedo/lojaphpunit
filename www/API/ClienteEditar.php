@@ -22,8 +22,7 @@ class ClienteEditar{
                 $obj-> setUf($_POST['uf']);
                 $obj-> setBairro($_POST['bairro']);
 
-                print_r($obj);
-                       
+                                    
                 $DAO = new DAOCliente();
                 $this->cliente = $DAO->editarPorId($_GET['id']);
                
