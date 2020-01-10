@@ -103,6 +103,13 @@
             $view = "detalhe-produto.php";
 
         break;
+        case 'produtobuscar':
+            $obj = new \LOJA\API\ProdutoBuscar;            
+            $produto = $obj->produto;
+            //echo $produto->getNome();
+            $view = "detalhe-produto.php";
+
+        break;
         /**PRODUTOS */
         
         /**USUARIO */

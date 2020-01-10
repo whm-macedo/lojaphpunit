@@ -37,8 +37,13 @@ class DAOPedido{
         }catch(\Exception $e){
             $pdo->rollback();
             return "Erro ao efetuar o pedido";
-        }    
+        }  
+          
     }
+
+    
+}
+=======
     public function listarPedidoCliente($idCliente)
     {
         $sql = "SELECT pedido.data_pedido, SUM(produto.preco*item.quantidade) as total
@@ -80,3 +85,4 @@ class DAOPedido{
 
 
 }
+
