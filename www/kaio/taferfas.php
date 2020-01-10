@@ -4,6 +4,6 @@ mudar o daocliente --- ok
 finalizar o pedido 
 pagamentos 
 verificar se ta logado 
-apagar tudo do login adm, exceto o form 
+apagar tudo do login adm, exceto o form (TEM QUE FAZER UM CSS SO PARA A PAGINA)
 menu de adm
 sobre falando sobre nos
