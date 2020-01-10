@@ -1,18 +1,63 @@
 .headermenu {
-    background-color: white;
+    background-color: #e60014;
+}
+
+.login {
+    background-color: #e60014;
+}
+
+.btn:hover {
+    color: #fff!important;
+    background-color: #e60014 ;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #e60014;
+    border-color: #fff;
+}
+
+.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #e60014 !important;
+    border-color: #4e555b;
 }
 
 .icon {
-    padding-top: 30px;
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .barrapesquisa {
     width: 520px !important;
     padding-top: 10px;
 }
+.iconhome{
+    color: #e60014;
+    height: 50px;
+    margin-bottom: 1px;
+}
 
-
+.menubarra {
+    background-color: #e60014;
+}
+/* pagina do projeto */
+.list-group-item.active {
+    z-index: 2;
+    color: 
+#fff;
+background-color:
+#f25252;
+border-color:
+    #0e0e0e;
+}
+/* Formulario cliente */
+.formadm{
+    background-color: #e60014;
+}
+.formadm:hover{
+    background-color: #f14d5b;
+}
 /* MENU CATEGORIA */
 
 .categoria {
@@ -36,9 +81,11 @@
     width: 160px !important;
 }
 
-.item-prod{
-  background-color:#b1b1b1fa;
+.item-prod {
+    background-color: #b1b1b1fa;
 }
+
+
 /* PRODUTOS HOME */
 
 .grow:hover {
@@ -47,11 +94,13 @@
     transform: scale(1.3);
 }
 
+
 /* CARROSEL PRODUTOS
 .item-prod {
   background:none !important;
   
 } */
+
 
 /* MAPBOX */
 
@@ -59,26 +108,26 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 22px;
     margin: 0;
     font-weight: 400;
     line-height: 20px;
     padding: 20px 2px;
-  }
-  
-  a {
+}
+
+a {
     color: #404040;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #101010;
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     /* position: absolute; */
     width: 33.3333%;
     height: 100%;
@@ -86,84 +135,90 @@
     left: 0;
     overflow: hidden;
     border-right: 1px solid rgba(0, 0, 0, 0.25);
-  }
-  
-  .pad2 {
-    padding: 20px;
-  }
-  
-  .map {
-     /* position: absolute; */
-    
-    width: 56.6666%;
+}
 
+.pad2 {
+    padding: 20px;
+}
+
+.map {
+    /* position: absolute; */
+    width: 56.6666%;
     top: 0;
     bottom: 0;
-  }
-  
-  .heading {
+}
+
+.heading {
     background: #fff;
     border-bottom: 1px solid #eee;
     height: 60px;
     line-height: 60px;
     padding: 0 10px;
-  }
-  
-  .listings {
+}
+
+.listings {
     height: 100%;
     overflow: auto;
     padding-bottom: 60px;
-  }
-  
-  .listings .item {
+}
+
+.listings .item {
     display: block;
     border-bottom: 1px solid #eee;
     padding: 10px;
     text-decoration: none;
-  }
-  
-  .listings .item:last-child { border-bottom: none; }
-  
-  .listings .item .title {
+}
+
+.listings .item:last-child {
+    border-bottom: none;
+}
+
+.listings .item .title {
     display: block;
-    color:#ff110081;
+    color: #ff110081;
     font-weight: 700;
-  }
-  
-  .listings .item .title small { font-weight: 400; }
-  
-  .listings .item.active .title,
-  .listings .item .title:hover { color: #ff1100; }
-  
-  .listings .item.active {
+}
+
+.listings .item .title small {
+    font-weight: 400;
+}
+
+.listings .item.active .title,
+.listings .item .title:hover {
+    color: #ff1100;
+}
+
+.listings .item.active {
     background-color: #f8f8f8;
-  }
-  
-  ::-webkit-scrollbar {
+}
+
+ ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
     border-left: 0;
     background: rgba(0, 0, 0, 0.1);
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+ ::-webkit-scrollbar-track {
     background: none;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+ ::-webkit-scrollbar-thumb {
     background: #00853e;
     border-radius: 0;
-  }
-  
-  .clearfix { display: block; }
-  
-  .clearfix::after {
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix::after {
     content: '.';
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
-  }
+}
 
 
 /* CARRINHO */
