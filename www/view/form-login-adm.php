@@ -1,8 +1,4 @@
-<?php
 
-include "view/header.php";
-
-?>
 <div class="row  d-flex justify-content-center mt-5">
 </div>
 <div class="col-md-12 d-flex justify-content-center">
@@ -55,8 +51,3 @@ include "view/header.php";
 </div>
 </div>
 
-<?php
-
-include "view/footer.php";
-
-?>

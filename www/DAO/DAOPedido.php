@@ -40,5 +40,49 @@ class DAOPedido{
         }  
           
     }
+
     
 }
+=======
+    public function listarPedidoCliente($idCliente)
+    {
+        $sql = "SELECT pedido.data_pedido, SUM(produto.preco*item.quantidade) as total
+        FROM pedido INNER JOIN cliente
+        on pedido.fk_cliente = cliente.pk_cliente
+        inner join item
+        on item.fk_pedido = pedido.pk_pedido
+        inner join produto
+        on produto.pk_produto = item.fk_produto
+        where cliente.pk_cliente = id";
+
+    
+
+    $con = Conexao::getInstance()->prepare($sql);
+    $con->bindValue(":id", $idCliente);
+    $result = $con->execute();
+    }
+    public function PedidoDetalhado(Type $var = null)
+    {
+        // DETALHA UM PEDIDO
+      
+      $sql ="SELECT 
+      pedido.data_pedido,
+      pedido.frete,
+      produto.nome,
+      produto.preco
+      
+          FROM pedido INNER JOIN cliente
+          ON pedido.fk_cliente = cliente.pk_cliente
+
+          INNER JOIN item
+          ON item.fk_pedido = pedido.pk_pedido
+
+          INNER JOIN produto
+          ON produto.pk_produto = item.fk_produto
+          
+          WHERE pedido.pk_pedido = :id";
+    }
+
+
+}
+
