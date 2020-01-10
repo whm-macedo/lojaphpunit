@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="<?php echo DIRCSS; ?>bootstrap.css">
   <link rel="stylesheet" href="<?php echo DIRFAW; ?>all.css">
   <link rel="stylesheet" href="<?php echo DIRCSS; ?>style.css">
-  
+
   <title>DOE+</title>
 </head>
 
@@ -20,8 +20,9 @@
 
 <body>
   <!-- Just an image -->
-  <div class="row ">
+  <div class="row menubarra">
     <div class="col-md-1 col-sm-1 d-none d-sm-block">
+
       <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
         <a class="navbar-brand" href="#">
           <img src="<?php echo DIRIMG; ?>core-sl.png" width="30" height="30" alt="">
@@ -51,30 +52,38 @@
       </nav>
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-      <a href="<?php echo BASEURL; ?>login/cliente"> <i class="fas fa-user icon">
-       
-       <?php 
-          if(isset($_SESSION['clientenome'])){
-            echo $_SESSION['clientenome'];                                 
-        
-          }else{
-            echo "Login";
-          }
-       ?>
+      <div class="dropdown h-25  ">
+        <button class="btn btn-secondary dropdown-toggle login mt-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user icon"> Login</i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
+          <a class="dropdown-item" href="#">Não tenho cadastrar</a>
+          <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
+            Sair
+          </a>
+        </div>
+      </div>
+
+
+      <?php
+      if (isset($_SESSION['clientenome'])) {
+        echo $_SESSION['clientenome'];
+      } else {
+        echo "";
+      }
+      ?>
 
       </i></a>
 
 
-      <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
-      <i class="fas fa-window-close icon"></i>
-                   
-      </a>
-      
-      
+
+
+
 
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
-      <a href=" <?php echo BASEURL; ?>carrinho" class="mb-3"><i class="fas fa-cart-plus icon"> Meu Carrinho</i></a>
+      <a href=" <?php echo BASEURL; ?>carrinho" class="mt-3"><i class="fas fa-cart-plus icon"> Meu Carrinho</i></a>
 
     </div>
 

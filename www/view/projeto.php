@@ -1,6 +1,6 @@
 <?php include "view/header.php"; ?>
 
-<h1>Página do projeto</h1>
+
 <!-- INICIO JUMBOTRON "IMPORTANCIA DE DOAR SANGUE" -->
 <div class="jumbotron">
     <h1 class="display-9  " style="color:red">POR QUE SER UM DOADOR?</h1>
