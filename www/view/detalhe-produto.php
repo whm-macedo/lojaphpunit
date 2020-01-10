@@ -15,7 +15,7 @@
     </ul>
 
     
-
+    <?php $addCarrinho = BASEURL."carrinho/adicionar/" .$produto->getPk_produto(); ?>
       <div class="col-sm-3 mb-3">
         <div class="card h-100 ">
           <a href="#"><img class="card-img-top" src="<?php echo $produto->getImagem() ?>" alt=""></a>
@@ -31,7 +31,7 @@
           <div class="card-footer">
             <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
           </div>
-          <a type="button" class="btn btn-primary" href="<?php echo $linkRemove; ?>">Comprar
+          <a type="button" class="btn btn-primary" href="<?php echo $addCarrinho; ?>">Comprar
             <!-- <button type="button" class="btn btn-primary">Comprar</button> -->
           </a>
 

@@ -15,7 +15,7 @@
     </ul>
 
     <?php foreach ($lista as $produto) {
-      $linkRemove = BASEURL."carrinho/adicionar/" . $produto['id'];
+      $addCarrinho = BASEURL."carrinho/adicionar/" . $produto['id'];
       ?>
 
       <div class="col-sm-3 mb-3">
@@ -33,7 +33,7 @@
           <div class="card-footer">
             <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
           </div>
-          <a type="button" class="btn btn-primary" href="<?php echo $linkRemove; ?>">Comprar
+          <a type="button" class="btn btn-primary" href="<?php echo $addCarrinho; ?>">Comprar
             <!-- <button type="button" class="btn btn-primary">Comprar</button> -->
           </a>
 

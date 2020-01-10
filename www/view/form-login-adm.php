@@ -8,7 +8,7 @@ include "view/header.php";
 <div class="col-md-12 d-flex justify-content-center">
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-      <form class="form-horizontal " method="post" action="<?php echo $url; ?>/login/adm">
+      <form class="form-horizontal " method="post" action="<?php echo BASEURL; ?>/login/adm">
         <fieldset>
 
           <!-- Form Name -->

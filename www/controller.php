@@ -85,7 +85,7 @@
             $obj = new \LOJA\API\ProdutoVisualizar;            
             $produto = $obj->produto;
             //echo $produto->getNome();
-            $view = "unico-produto.php";
+            $view = "detalhe-produto.php";
 
         break;
         /**PRODUTOS */
