@@ -1,2 +1,11 @@
-Loop pesquisa banco
-Pesquisa 1 registro 
+
+vizualiza cliente 
+--action
+--input type hidden
+
+controller 
+-cliente visualiar
+
+cliente altualizar
+
+daocliente

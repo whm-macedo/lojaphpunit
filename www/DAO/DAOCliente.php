@@ -42,7 +42,7 @@ class DAOCliente{
     }
 
 
-    public function editarPorId($id)
+    public function editarPorId(Cliente $cliente, $id)
     {
         
         $cliente = new Cliente();
