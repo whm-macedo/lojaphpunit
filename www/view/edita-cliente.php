@@ -4,17 +4,17 @@ include "view/header.php";
 
 ?>
 
-<form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL?>cliente/editar/<?php echo $cliente['pk_cliente']?>">
+<form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL ?>cliente/editar/<?php echo $cliente['pk_cliente'] ?>">
     <fieldset>
 
         <!-- Form Name -->
-        <legend>Visualizar/Editar Cliente</legend>
+        <legend>Editar Dados</legend>
 
         <!-- Text input-->
         <div class="form-group">
             <label class="col-md-6 control-label" for="nome">Nome:</label>
             <div class="col-md-6">
-                <input id="nome" name="nome" value="<?php echo $cliente['nome']; ?>" type="text" placeholder="" class="form-control input-md" required="">
+                <input id="nome" name="nome" value="<?php echo $cliente->getNome(); ?>" type="text" placeholder="" class="form-control input-md" required="">
             </div>
         </div>
 
@@ -22,7 +22,7 @@ include "view/header.php";
         <div class="form-group">
             <label class="col-md-6 control-label" for="senha">Senha:</label>
             <div class="col-md-6">
-                <input id="senha" name="senha" value="<?php echo $cliente['senha']; ?>" type="text" placeholder="" class="form-control input-md">
+                <input id="senha" name="senha" value="<?php echo $cliente->getSenha(); ?>" type="text" placeholder="" class="form-control input-md">
             </div>
         </div>
 
@@ -61,29 +61,22 @@ include "view/header.php";
 
             </div>
         </div>
-                <!-- Text input-->
-                <div class="form-group">
-            <label class="col-md-6 control-label" for="complemento">Complemento:</label>
-            <div class="col-md-6">
-                <input id="complemento" name="complemento" value="<?php echo $cliente['complemento']; ?>" type="text" placeholder="" class="form-control input-md">
-
-            </div>
-        </div>
-
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-6 control-label" for="cep">cep:</label>
+            <label class="col-md-6 control-label" for="complemento">cep:</label>
             <div class="col-md-6">
-                <input id="cep" name="cep" value="<?php echo $cliente['cep']; ?>" type="text" placeholder="" class="form-control input-md">
+                <input id="complemento" name="cep" value="<?php echo $cliente['cep']; ?>" type="text" placeholder="" class="form-control input-md">
 
             </div>
         </div>
 
+
+        <!-- Text input -->
         <div class="form-group">
             <label class="col-md-6 control-label" for="uf">UF:</label>
             <div class="col-md-6">
-                <input id="uf" name="uf" value="<?php echo $cliente['uf'];
+                <input id="uf" name="uf" value="<?php //echo $cliente['numero'];
                                                 ?>" type="text" placeholder="" class="form-control input-md">
 
             </div>
@@ -103,10 +96,9 @@ include "view/header.php";
     <div class="form-group">
       <label class="col-md-6 control-label" for="editar"></label>
       <div class="col-md-6">
-        <button id="editar" name="editar" class="btn btn-primary">Editar</button></a>
+        <a href="<?php echo BASEURL ?>cliente/editar/<?php echo $cliente['pk_cliente'] ?>"><button id="editar" name="editar" class="btn btn-primary">Editar</button></a>
       </div>
     </div>
-
 
     </fieldset>
 </form>

@@ -16,5 +16,10 @@
             </div>
         </div>
     </div>
-    <?php echo $_SESSION["clientenome"]; ?>
+   <div>aqui tem que entrar um visual para os pedidos do usuario uma lista por exemplo</div>
+   <div> outro espaco com as informações do proprio cliente, para ele editar se quiser...
+    <a href='
+    <?php echo BASEURL?>cliente/visualizar/<?php echo$_SESSION["clienteid"];?>'
+    >Visualizar</a>
+   </div>
 

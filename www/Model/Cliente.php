@@ -5,6 +5,7 @@ use LOJA\includes\Util;
     class Cliente{
         private $pk_cliente;
         private $nome;
+        private $senha;
         private $telefone;
         private $email;
         private $cpf;
@@ -13,7 +14,7 @@ use LOJA\includes\Util;
         private $cep;
         private $uf;
         private $bairro;
-        private $senha;
+       
 
         public function __construct(){
             
@@ -36,6 +37,13 @@ use LOJA\includes\Util;
             }else{
                 throw new \Exception('Nome Inválido');
             }
+        }
+        public function getSenha(){
+            return $this->senha;
+        }
+    
+        public function setSenha($senha){
+            $this->senha = $senha;
         }
     
         public function getTelefone(){
@@ -105,13 +113,6 @@ use LOJA\includes\Util;
     
         public function setBairro($bairro){
             $this->bairro = $bairro;
-        }
-        public function getSenha(){
-            return $this->senha;
-        }
-    
-        public function setSenha($senha){
-            $this->senha = $senha;
         }
     }
 ?>

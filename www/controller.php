@@ -45,7 +45,15 @@
 
 
         /**CLIENTE */
-        case 'clientecadastrar':        
+        /**LOGIN CLIENTE */
+        case 'logincliente':
+            $obj = new \LOJA\API\ClienteLogar;
+            $msg = $obj->msg;
+            $view = 'form-login-cliente.php';
+            break;
+            /**LOGIN  CLIENTE*/
+
+            case 'clientecadastrar':        
             $obj = new \LOJA\API\ClienteCadastrar;
             $msg = $obj->msg;
             $view = "form-cliente.php";
@@ -57,11 +65,18 @@
             $view = "lista-cliente.php";
         break;           
         case 'clientevisualizar':
-            \LOJA\includes\Seguranca::restritoAdm();
+            //\LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ClienteVisualizar; 
             $cliente = $obj->cliente;
             $view = "visualiza-cliente.php";
+        break;           
+        case 'clienteeditar':
+            //\LOJA\includes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\ClienteEditar; 
+            $cliente = $obj->cliente;
+            $view = "edita-cliente.php";
         break;
+
         /**CLIENTE */
 
         /**PRODUTOS */
@@ -157,14 +172,6 @@
         break;
         /**LOGIN ADMIN */
 
-
-        /**LOGIN CLIENTE */
-        case 'logincliente':
-        $obj = new \LOJA\API\ClienteLogar;
-        $msg = $obj->msg;
-        $view = 'form-login-cliente.php';
-        break;
-        /**LOGIN  CLIENTE*/
 
         /**PAINEL CLIENTE */
         case 'painelcliente':

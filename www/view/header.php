@@ -55,7 +55,7 @@
        
        <?php 
           if(isset($_SESSION['clientenome'])){
-            echo $_SESSION['clientenome'];                        
+            echo $_SESSION['clientenome'];                                 
         
           }else{
             echo "Login";
@@ -69,6 +69,7 @@
       <i class="fas fa-window-close icon"></i>
                    
       </a>
+      
       
 
     </div>
