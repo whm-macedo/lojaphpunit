@@ -101,6 +101,27 @@ class DAOProduto
         return $produto;
     }
 
+   
+    public function buscarPorNome($nome)
+    {
+        $sql = "SELECT * FROM produto WHERE nome = :nome";
+
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":nome", $nome);
+        $con->execute();
+
+        $obj = $con->fetch(\PDO::FETCH_ASSOC);
+
+        $produto = new Produto();
+        $produto->setPk_produto($obj['pk_produto']);
+        $produto->setNome($obj['nome']);
+        $produto->setPreco($obj['preco']);
+        $produto->setPreco($obj['categoria']);
+        $produto->setImagem($obj['imagem']);
+
+        return $produto;
+    }
+
 
     public function deleteAll()
     {
