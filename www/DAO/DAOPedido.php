@@ -40,10 +40,6 @@ class DAOPedido{
         }  
           
     }
-
-    
-}
-=======
     public function listarPedidoCliente($idCliente)
     {
         $sql = "SELECT pedido.data_pedido, SUM(produto.preco*item.quantidade) as total
@@ -85,4 +81,3 @@ class DAOPedido{
 
 
 }
-
