@@ -4,13 +4,14 @@ use LOJA\Model\Cliente;
 use LOJA\DAO\DAOCliente;     
 
 class ClienteEditar{
-    public $cliente;
+    public $msg;
 
     public function __construct(){
         if ($_POST) {
             try {
                 $obj = new Cliente();
 
+                $obj-> setPk_cliente($_POST['id']);
                 $obj-> setNome($_POST['nome']);
                 $obj-> setSenha($_POST['senha']);
                 $obj-> setTelefone($_POST['telefone']);
@@ -24,10 +25,10 @@ class ClienteEditar{
 
                                     
                 $DAO = new DAOCliente();
-                $this->cliente = $DAO->editarPorId($_GET['id']);
+                $this->msg = $DAO->editarPorId($obj);
                
             } catch (\Exception $erro) {
-                $this->cliente = $erro->getMessage();
+                $this->msg = $erro->getMessage();
             }
         }
     

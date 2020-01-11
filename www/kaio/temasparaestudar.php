@@ -4,8 +4,8 @@ vizualiza cliente
 --input type hidden
 
 controller 
--cliente visualiar
+-cliente visualiar -- OK
 
-cliente altualizar
+cliente altualizar -- OK
 
-daocliente
+daocliente -- OK

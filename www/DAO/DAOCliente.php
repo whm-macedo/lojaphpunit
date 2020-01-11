@@ -42,21 +42,26 @@ class DAOCliente{
     }
 
 
-    public function editarPorId(Cliente $cliente, $id)
-    {
-        
-        $cliente = new Cliente();
-        //print_r($cliente);
-        $pdo = Conexao::getInstance();
-        $pdo->beginTransaction();
+    public function editarPorId(Cliente $cliente){
 
         try {
-            $con = $pdo->prepare(
-                'UPDATE cliente SET (nome = :nome, senha = :senha, telefone = :telefone, email = :email, cpf = :cpf, rua = :rua, complemento = :complemento, cep = :cep, uf =:uf, bairro = :bairro) WHERE pk_cliente = :id 
-                '
-            );
-            //print_r($con);
+            $sql = "UPDATE cliente SET 
+            nome = :nome, 
+            senha = :senha, 
+            telefone = :telefone, 
+            email = :email, 
+            cpf = :cpf, 
+            rua = :rua, 
+            complemento = :complemento, 
+            cep = :cep, 
+            uf =:uf, 
+            bairro = :bairro
+            WHERE pk_cliente = :id ";
+            
+            
+            $con = Conexao::getInstance()->prepare($sql);
 
+            $con->bindValue(":id", $cliente->getPk_cliente());
             $con->bindValue(":nome", $cliente->getNome());
             $con->bindValue(":senha", $cliente->getSenha());
             $con->bindValue(":telefone", $cliente->getTelefone());
@@ -68,15 +73,13 @@ class DAOCliente{
             $con->bindValue(":uf", $cliente->getUf());
             $con->bindValue(":bairro", $cliente->getBairro());
             $con->execute();
-            
-            $this->lastId = $pdo->lastInsertId(); // Retorna o id do cliente cadastrado
-            $pdo->commit(); // Finaliza a transação
 
-            return "Atualizado com sucesso!";
+            echo $cliente->getNome();
+            return "Atualizado com sucesso";
+            
 
         } catch (\Exception $e) {
-            $this->lastId = 0;
-            $pdo->rollback();
+                       
             return "Erro ao atualizar";
         }
     }

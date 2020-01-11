@@ -4,11 +4,13 @@ include "view/header.php";
 
 ?>
 
-<form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL?>cliente/editar/<?php echo $cliente['pk_cliente']?>">
+<form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL?>cliente/visualizar/<?php echo $_GET['id']?>">
     <fieldset>
 
         <!-- Form Name -->
         <legend>Visualizar/Editar Cliente</legend>
+
+        <input id="id" name="id" value="<?php echo $cliente['pk_cliente']; ?>" type="hidden">
 
         <!-- Text input-->
         <div class="form-group">
