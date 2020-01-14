@@ -11,21 +11,18 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item  active text-center">
-      <img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide1.png" alt="first slide">
-      <div class="mt-4">
-        <h5 style=" color:#FFFFFF ;">POSSO SER UM DOADOR?</h5>
-      </div>
-      <div><a class="btn  btn-primary" href="<?php echo BASEURL  ?>view/como-funciona.php" role="button" style="background-color:#FFFFFF; color: red;">Saiba Mais</a></div>
+      <a href="<?php echo BASEURL; ?>produto/listar"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide1.png" alt="first slide"></a>
 
     </div>
     <div class="carousel-item text-center">
-      <img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide2.png" alt="...">
+      <a href="<?php echo BASEURL; ?>voluntario"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide2.png" alt="..."></a>
 
     </div>
     <div class="carousel-item text-center">
-    <video  autoplay loop style="margin-top:25px;">
+   <a href="<?php echo BASEURL; ?>mapas"><video  autoplay loop style="margin-top:25px;">
       <source class="mt-4" src="<?php echo DIRIMG; ?>slide3.mp4" type="video/mp4">
     </video>
+    </a> 
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
