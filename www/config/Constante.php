@@ -9,9 +9,9 @@ if ( !defined('ABSPATH') )
 /* caminho no server para o sistema */
 if ( !defined('BASEURL') )
 	//define('BASEURL', 'http://www.doemais.web70113.uni5.net/');
-	//define('BASEURL', 'http://localhost/lojaphpunit/www/');
+	define('BASEURL', 'http://localhost/lojaphpunit/www/');
 	/**LINUX KAIO*/
-	define('BASEURL', 'http://localhost/senac/lojaphpunit/www/');
+	//define('BASEURL', 'http://localhost/senac/lojaphpunit/www/');
 // print_r(BASEURL);
 
 #Diretórios Específicos

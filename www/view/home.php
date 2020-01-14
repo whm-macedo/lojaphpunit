@@ -2,6 +2,7 @@
 
 
 <!-- CARROSEL  -->
+<div class="container-fluid" >
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -10,19 +11,21 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item  active text-center">
-      <img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>DOE+.png" alt="first slide">
+      <img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide1.png" alt="first slide">
       <div class="mt-4">
         <h5 style=" color:#FFFFFF ;">POSSO SER UM DOADOR?</h5>
       </div>
       <div><a class="btn  btn-primary" href="<?php echo BASEURL  ?>view/como-funciona.php" role="button" style="background-color:#FFFFFF; color: red;">Saiba Mais</a></div>
 
     </div>
-    <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo DIRIMG; ?>" alt="...">
+    <div class="carousel-item text-center">
+      <img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide2.png" alt="...">
 
     </div>
-    <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo DIRIMG; ?>" alt="...">
+    <div class="carousel-item text-center">
+    <video  autoplay loop style="margin-top:25px;">
+      <source class="mt-4" src="<?php echo DIRIMG; ?>slide3.mp4" type="video/mp4">
+    </video>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -33,6 +36,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
 <!-- FIM CARROUSEL -->
 <section class="section bg-light py-5  bottom-slant-gray">

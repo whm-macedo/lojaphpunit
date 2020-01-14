@@ -73,12 +73,12 @@ border-color:
 /* CARROSEL */
 
 .carousel-item {
-    background-color: red;
+    /* background-color: red; */
     height: 350px;
 }
 
 .carousel-img {
-    width: 160px !important;
+  
 }
 
 .item-prod {
