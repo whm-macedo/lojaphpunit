@@ -262,7 +262,13 @@
 
             $view = "carrinho.php";
         break;
-        
+        // Pagamento
+        case 'pagamento':
+            // $obj = new \LOJA\API\Pagamento;
+
+            $view = "pagamento.php";
+        break;
+
         default:
                 $obj = new \LOJA\API\ProdutoListarHome;
                 $lista2 = $obj->lista;
