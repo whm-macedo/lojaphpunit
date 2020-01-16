@@ -21,7 +21,7 @@ include "view/header.php";
       
     </form>
 
-
+</div>
 
 <?php
 
