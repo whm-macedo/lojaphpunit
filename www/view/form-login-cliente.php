@@ -3,6 +3,7 @@
 include "view/header.php";
 
 ?>
+
 <div class="col-md-12 d-flex justify-content-center">
 <form class="form-horizontal" method="post" action="">
       <img class="mb-4 ml-5 d-flex justify-content-center" src="<?php echo DIRIMG; ?>doe-final.png" alt="" width="72" height="72">
@@ -20,14 +21,7 @@ include "view/header.php";
       
     </form>
 
-    </div>
-    
 
-
-    </div>
-  </div>
-</div>
-</div>
 
 <?php
 

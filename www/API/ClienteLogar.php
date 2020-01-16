@@ -27,6 +27,7 @@ class ClienteLogar{
                 }
             }catch (\Exception $e) {
                 $this->msg = $e->getMessage();
+               
             }
         }
     }
