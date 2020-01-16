@@ -7,7 +7,7 @@
 
         if ($carrinho === null || empty($carrinho->getItems())) {
             // Inicio HTML
-            ?>
+        ?>
 
             <div class="col-md-12 mt-5 ">
                 <div class="jumbotron rounded-left ">
@@ -23,19 +23,19 @@
         } else {
 
 
-            ?>
+        ?>
             <div class="col-md-8">
                 <h2 class="display-6 text-center mt-2"> Meus pedidos</h2>
                 <hr style="color:cadetblue">
                 <?php
-                    foreach ($carrinho->getItems() as $item) {
+                foreach ($carrinho->getItems() as $item) {
 
-                        $produto = $item->getProduto();
-                        $linkRemove = BASEURL."carrinho/remover/" . $produto->getPk_produto();
+                    $produto = $item->getProduto();
+                    $linkRemove = BASEURL . "carrinho/remover/" . $produto->getPk_produto();
 
-                        // Inicio HTML
+                    // Inicio HTML
 
-                        ?>
+                ?>
 
 
 
@@ -88,11 +88,32 @@
 
 
                 <?php
-                        // Fim HTML
+                    // Fim HTML
 
+                }
+
+                ?>
+                <!-- Colocar onde quer que apareca o o valor -->
+                <form method="POST" action="<?php echo BASEURL; ?>frete/calcular ">
+                    <label for="">Frete</label>
+                    <input type="text" size="20" name="cep">
+                    <button>Calcular</button>
+                    <?php
+                    if (isset($_POST['cep'])) {
+                        echo "<p>Preço: R$ " . $frete->getValor() . "</p>";
+                        echo "<p>Entrega: R$ " . $frete->getPrazoEntrega() . " dias</p>";
+                        echo '<a href="' . $url . '/pedido/finalizar" class="btn btn-success">Finalizar</a>';
+                    } else {
+                        echo "<p>Insira o CEP</p>";
+                        echo '<a href="' . $url . '/pedido/finalizar" class="btn btn-success disabled">Finalizar</a>';
                     }
-
                     ?>
+
+                    <!-- <div class="col-md-12 mt-5">
+
+            <a href="<?php echo BASEURL . "pedido/finalizar"; ?>" class="btn btn-danger">Finalizar Pedido</a>
+        </div> -->
+                </form>
             </div>
             <div class="col-md-4">
                 <h2 class="display-5"> Total da Compra:</h2>
@@ -101,35 +122,13 @@
 
 <?php
 
-}
+        }
 
 ?>
 
 </div>
-<!-- Colocar onde quer que apareca o o valor -->
-<form method="POST" action="<?php echo BASEURL; ?>frete/calcular ">
-    <label for="">Frete</label>
-    <input type="text" size="20" name="cep">
-    <button>Calcular</button>
-    <?php
-        if(isset($_POST['cep'])){
-            echo "<p>Preço: R$ ".$frete->getValor()."</p>";
-            echo "<p>Entrega: R$ ".$frete->getPrazoEntrega()." dias</p>";
-            echo '<a href="'.$url.'/pedido/finalizar" class="btn btn-success">Finalizar</a>';
-            
-        }else{
-            echo "<p>Insira o CEP</p>";
-            echo '<a href="'.$url.'/pedido/finalizar" class="btn btn-success disabled">Finalizar</a>';
-        }
-    ?>
 
-<!-- <div class="col-md-12 mt-5">
-
-            <a href="<?php echo BASEURL. "pedido/finalizar"; ?>" class="btn btn-danger">Finalizar Pedido</a>
-        </div> -->
-</form>
 
 
 
 <?php include "footer.php" ?>
-
