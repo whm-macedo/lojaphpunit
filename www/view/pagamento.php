@@ -1,72 +1,71 @@
 <?php include "view/header.php"; ?>
-<div class="row align-items-center" >
-<div class="col-12 ">
+<div class="container d-flex justify-content-center">
+<div class="py-5 text-center">
+  
+</div>
 
-<form class="form-horizontal  ">
-   
 
-        <!-- Form Name -->
-        <legend>Infomações para pagamento</legend>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label labelcss" for="textinput">Numero do cartão</label>
-            <div class="col-md-4">
-                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
-
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label labelcss" for="textinput">Código de segurança</label>
-            <div class="col-md-2">
-                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-
-            </div>
-        </div>
-
-        
-
+<div class="row align-items-center mt-2">
+    <div class="col-md-12 ">
         <!-- Select Basic -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="selectbasic">Expira</label>
-            <div class="row " >
-            <div class="col-md-1" style="padding-right:2px ">
-                <select id="selectbasic" name="selectbasic" class="form-control pr-0">
-                    <option value="1">01</option>
-                    <option value="2">02</option>
-                    <option value="3">03</option>
-                    <option value="4">04</option>
-                    <option value="5">05</option>
-                    <option value="6">06</option>
-                    <option value="7">07</option>
-                </select>
-            </div>
-            <label for="" class="">/</label>
-            <div class="col-md-1 " style="padding-left:2px ">
-                <select id="selectbasic" name="selectbasic" class="form-control">
-                    <option value="1">2020</option>
-                    <option value="2">2021</option>
-                </select>
-            </div>
-            </div>
-        </div>
 
-        <!-- Multiple Radios (inline) -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="radios"></label>
-            <div class="col-md-4">
-                <label class="radio-inline" for="radios-0">
-                    <input type="radio" name="radios" id="radios-0" value="1" checked="">
-                    Pagamento em boleto
-                </label>
+
+        <form action=" " method="POST">
+            <p class="display-4" style="font-size:2.5rem">Selecione sua forma de pagamento</p>
+            <div class="row justify-content-center">
+                <div class="form-check m-3">
+                    <input type="radio" class="form-check-input" id="materialChecked" name="cartao">
+                    <label class="form-check-label" for="materialChecked">Cartão de Credito</label>
+
+
+                </div>
+                <div class="form-check m-3">
+                    <input type="radio" class="form-check-input" id="materialChecked" name="boleto">
+                    <label class="form-check-label" for="materialChecked">Boleto</label>
+                </div>
+
+                <button class="btn btn-primary btn-block  btnpagamento " type="submit">OK</button>
             </div>
-        </div>
+        </form>
 
-        <button class="btn btn-lg btn-primary btn-block w-25" type="submit">Salvar</button>
-</form>
 
+        <?php if (isset($_POST['cartao'])) {
+        ?>
+        <div class="container  justify-content-center">
+            <form class="form-horizontal  ">
+
+
+                <!-- Form Name -->
+                <legend>Infomações para pagamento</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label labelcss" for="textinput">Numero do cartão</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label labelcss" for="textinput">Código de segurança</label>
+                    <div class="col-md-2">
+                        <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+
+                    </div>
+                </div>
+            </form>
+            </div>
+        <?php 
+        } else { 
+            var_dump(" não escolheu 'bike'");
+        }
+        ?>
+
+    </div>
+   
 </div>
 </div>
 <?php include "view/footer.php"; ?>

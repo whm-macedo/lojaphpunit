@@ -42,7 +42,7 @@
 
             <nav class="navbar navbar-light ">
                 <a class="navbar-brand" href="<?php echo BASEURL; ?>painel/cliente">
-                <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right"></i>
                     Voltar
                 </a>
             </nav>
@@ -54,7 +54,7 @@
             </nav>
             <nav class="navbar navbar-light ">
                 <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
-                <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-sign-out-alt"></i>
                     Logoff
                 </a>
             </nav>
@@ -68,27 +68,39 @@
     </div>
     </div>
     <hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
-    <div class="collapse navbar-collapse catnav" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link"href="<?php echo BASEURL; ?>carrinho">Lista de pedidos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo BASEURL; ?>projeto">Seus dados cadastrais</a>
-      </li>
-     
-       <!-- BOTAR PHP -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
-          Ser voluntario
-        </a>
-      </li>
-    <li class="nav-item">
-        <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
-    </li>
-    </ul>
+    <div class="row justify-content-center ">
+        <!-- <div class="col-md-12 d-flex "> -->
+        <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  ">
 
-  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse catnav" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <!-- BOTAR PHP -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>carrinho">
+                            Listar pedidos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='
+                                <?php echo BASEURL ?>cliente/visualizar/<?php echo $_SESSION["clienteid"]; ?>'>Dados Cadastrais</a>
+                    </li>
+                    <!-- BOTAR PHP -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
+                            Ser voluntario
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
+                    </li>
+                </ul>
+
+            </div>
+
     </div>
     </div>
     </div>
