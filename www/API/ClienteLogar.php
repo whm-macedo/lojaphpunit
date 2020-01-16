@@ -6,7 +6,7 @@ use LOJA\DAO\DAOCliente;
 class ClienteLogar{
     public $msg;
 
-    function __construct(){
+    function __construct($url){
         if ($_POST) {
             try {
                 $obj = new Cliente();
@@ -15,13 +15,14 @@ class ClienteLogar{
 
                 $DAO = new DAOCliente();
                 $result = $DAO->buscaPorNomeSenha($obj);
+                $this->verificarUrl($url);
 
                 if($result){
                     $_SESSION['clienteid'] = $result['id'];
                     $_SESSION['clientenome'] = $result['nome'];
                     
                     // header("location: http://localhost/lojaphpunit/src/painel/adm");
-                    header ("location:".BASEURL."painel/cliente");
+                    //header ("location:".BASEURL."painel/cliente");
                 }else{
                     $this->msg = 'Usuário/Senha inválidos';
                 }
@@ -31,5 +32,18 @@ class ClienteLogar{
             }
         }
     }
+
+        function verificarUrl($url){
+
+            if(isset($_SESSION['url'])){
+
+            $url2 = $_SESSION['url'];
+            unset($_SESSION['url']);
+            header("location:".$url2);
+
+            }else{
+                header("location: ".$url."/painel/cliente");
+            }
+        }
 }
 

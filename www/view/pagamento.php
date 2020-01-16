@@ -7,6 +7,8 @@
 
         <!-- Form Name -->
         <legend>Infomações para pagamento</legend>
+        
+        <!--<?php echo $_SESSION['idpedido'];?>-->
 
         <!-- Text input-->
         <div class="form-group">
