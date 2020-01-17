@@ -68,21 +68,12 @@
         <a class="dropdown-item" href="<?php echo BASEURL; ?>painel/cliente">Painel Cliente</a>
         <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
 
-          <a class="dropdown-item" href="#">Não tenho cadastrar</a>
+          <a class="dropdown-item" href="#">Não tenho cadastro</a>
           <a class="dropdown-item" href="<?php echo BASEURL; ?>cliente/logoff">
             Sair
           </a>
         </div>
       </div>
-
-
- 
-
-
-
-
-
-
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
       <a href=" <?php echo BASEURL; ?>carrinho" class="mt-2">
