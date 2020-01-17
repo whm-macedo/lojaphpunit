@@ -87,10 +87,7 @@
                             <p class="display-4 mt-4" style="font-size:1.7rem">Clique aqui para baixar seu boleto</p>
                             <button type="submit" class="btn btn-primary">Baixar boleto</button>
 
-
-
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-6 border-right border-top mt-3">
