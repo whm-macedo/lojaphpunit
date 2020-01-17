@@ -231,10 +231,11 @@
         /**PAGEMENTO */
         
         case 'pedidopagamento':
+            $obj = new \LOJA\API\PedidoVisualizar;
+            
+            $pedido = $obj->pedido;
             $view = 'pagamento.php';
         break; 
-
-
         case 'pedidofinalizar':
             //\LOJA\includes\Seguranca::restritoUsuario();
             $obj = new \LOJA\API\PedidoCadastrar($url);

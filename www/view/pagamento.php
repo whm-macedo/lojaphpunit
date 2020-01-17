@@ -18,14 +18,14 @@
 
                     </div>
                 </div>
+
                 <div class="col-md-6">
                 <h2 class="display-5"> DADOS DO PEDIDO:</h2>
-                <p>Pedidos:</p> 
-                <p>Frete:</p>
-                <p>Total compra:</p>   
+                <p>Dias: <?php echo $pedido->getDias() ?></p> 
+                <p>Frete: <?php echo $pedido->getFrete() ?></p>
+                <p>Total compra:  <?php echo $pedido->getTotal() ?></p>   
             </div>
                 <div class="col-md-12">
-
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                             <form class="form-horizontal  ">
