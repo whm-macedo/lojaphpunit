@@ -113,16 +113,7 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo BASEURL; ?>mapas">Mapas</a>
           </li>
-          <!-- BOTAR PHP -->
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo BASEURL; ?>como/funciona">Como funciona</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item">Posso ser doador</a>
-              <a class="dropdown-item">Para aonde meu sangue vai</a>
-              <a class="dropdown-item">Quais pessoa seu ajudo</a>
-              <a class="dropdown-item">Depoimentos</a>
-            </div>
-          </li>
+          
           <!-- BOTAR PHP -->
           <li class="nav-item">
             <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
@@ -142,9 +133,9 @@
 
   <hr style="background-color: red; margin: 0px;">
   <!-- MENU DE PRODUTOS -->
-  <div class="row gitd-flex justify-content-center ">
+  <div class="row justify-content-center ">
     <!-- <div class="col-md-12 d-flex justify-content-center "> -->
-    <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block">
+    <nav class="navbar navbar-expand-lg navbar-light p-0 d-none d-sm-block">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

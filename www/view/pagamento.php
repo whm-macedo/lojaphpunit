@@ -19,6 +19,7 @@
                     </div>
                 </div>
 
+
                 <div class="col-md-6">
                 <h2 class="display-5"> DADOS DO PEDIDO:</h2>
                 <p>Dias: <?php echo $pedido->getDias() ?></p> 
@@ -26,6 +27,7 @@
                 <p>Total compra:  <?php echo $pedido->getTotal() ?></p>   
             </div>
                 <div class="col-md-12">
+
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                             <form class="form-horizontal  ">
@@ -59,7 +61,7 @@
                                 </div>
                                 <div class="form-group row ml-1">
 
-                                    <div class="form-group col-md-1 ">
+                                    <div class="form-group col-md-2 ">
 
                                         <select id="inputEstado" class="form-control" style="width:85px; margin-right:8px;">
                                             <option selected>Mês</option>
@@ -87,13 +89,13 @@
                             <p class="display-4 mt-4" style="font-size:1.7rem">Clique aqui para baixar seu boleto</p>
                             <button type="submit" class="btn btn-primary">Baixar boleto</button>
 
-
-
                         </div>
-
                     </div>
                 </div>
-               
+                <div class="col-md-6 border-right border-top mt-3">
+                    <button type="submit" class="btn btn-success mt-3">Comfirmar comprar</button>
+
+                </div>
             </div>
         </div>
     </div>

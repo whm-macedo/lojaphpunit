@@ -3,12 +3,24 @@
 
 <!-- INICIO JUMBOTRON "IMPORTANCIA DE DOAR SANGUE" -->
 <div class="jumbotron">
+<section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">COMO FUNCIONA</h2>
+          <h3 class="section-subheading text-muted">Veja como você pode ajudar</h3>
+        </div>
+      </div>
+      </div>
+    
+  </section>
+
     <h1 class="display-9  " style="color:red">POR QUE SER UM DOADOR?</h1>
     <p class="lead">Beneficios de ser um doador</p>
     <hr class="mb-4">
     <div class="row">
       <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
+        <div class="list-group list-group-horizontal " id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="1">Uma doação de sangue pode salvar até 4 vidas</a>
           <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list" href="#list-2" role="tab" aria-controls="wild">Seu organismo repõe rapidamente o sangue doado</a>
           <a class="list-group-item list-group-item-action" id="list-3-list" data-toggle="list" href="#list-3" role="tab" aria-controls="messages">Exame de Sangue Gratuito</a>
@@ -29,18 +41,10 @@
       </div>
     </div>
   </div>
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      </div>
-    
-  </section>
-
+  <p> posso ser um doador</p>
+ <p> para aonde vai o sangue </p>
+ <p> quais pessoas eu ajudo </p>
+ <p>depoimento</p>
   <!-- FIM JUMBOTRON "IMPORTANCIA DE DOAR SANGUE" -->
 
 

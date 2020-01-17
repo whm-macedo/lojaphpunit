@@ -271,7 +271,12 @@ footer {
     .slideDesktop{
         display: none;
     }
-    .slideMobile{
-        display:;
-    }
+    .list-group-horizontal {
+        
+      }
+    
 }
+@media (min-width: 600px) {
+    
+  
+  }
