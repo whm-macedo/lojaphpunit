@@ -67,8 +67,8 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="<?php echo BASEURL; ?>painel/cliente">Painel Cliente</a>
         <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
-
-          <a class="dropdown-item" href="#">Não tenho cadastro</a>
+        
+          <a class="dropdown-item" href="<?php echo BASEURL?>cliente/cadastrar">Não tenho cadastro</a>
           <a class="dropdown-item" href="<?php echo BASEURL; ?>cliente/logoff">
             Sair
           </a>
