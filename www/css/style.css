@@ -51,6 +51,12 @@ background-color:
 border-color:
     #0e0e0e;
 }
+m
+/* label do pagamento */
+.labelpagamento{
+    margin-bottom: 0rem !important;
+    
+}
 /* Formulario cliente */
 .formadm{
     background-color: #e60014;
@@ -61,8 +67,8 @@ border-color:
 /* MENU CATEGORIA */
 
 .btnpagamento{
-    width: 80px;
-    height: 45px;
+    width: 250px;
+    height: 60px;
 
 }
 
@@ -83,9 +89,7 @@ border-color:
     height: 350px;
 }
 
-.carousel-img {
-  
-}
+
 
 .item-prod {
     background-color: #b1b1b1fa;
@@ -249,7 +253,8 @@ footer {
     background-color: #F5F5F5;
 }
 
-
+/* PAGINA PROJETO */
+ 
 /* Estilos aplicados a larguras até 480 pixels */
 
 @media screen and (max-width: 600px) {
