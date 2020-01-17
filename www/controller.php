@@ -186,6 +186,7 @@
 
         /**PAINEL CLIENTE */
         case 'painelcliente':
+            $obj = new \LOJA\API\UsuarioLogar;
             $view = "painel-cliente.php";
         break;
         /**PAINEL CLIENTE */

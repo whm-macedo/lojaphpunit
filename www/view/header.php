@@ -65,11 +65,11 @@
 
       </i></button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
+        <a class="dropdown-item" href="<?php echo BASEURL; ?>painel/cliente">Painel Cliente</a>
+        <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
 
           <a class="dropdown-item" href="#">Não tenho cadastrar</a>
-          <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
-
+          <a class="dropdown-item" href="<?php echo BASEURL; ?>cliente/logoff">
             Sair
           </a>
         </div>
@@ -106,7 +106,7 @@
   <hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
   <div class="row justify-content-center ">
     <!-- <div class="col-md-12 d-flex "> -->
-    <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -149,17 +149,17 @@
 
 
 
-  <hr style="background-color: red; margin: 2px;">
+  <hr style="background-color: red; margin: 0px;">
   <!-- MENU DE PRODUTOS -->
-  <div class="row categoria d-flex justify-content-center">
+  <div class="row gitd-flex justify-content-center ">
     <!-- <div class="col-md-12 d-flex justify-content-center "> -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- IMPLEMENTAR LINKS PHP NO NAVLINK -->
-      <div class="collapse navbar-collapse  catnav " id="navbarNav">
+      <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#"><i class="fas fa-tshirt"></i> Roupa<span class="sr-only">(current)</span></a>
@@ -184,4 +184,4 @@
   </div>
   </div>
   <!-- FIM MENU PRODUTOS -->
-  <hr style="background-color: red; margin: 0;" class="hrproduto">
+  <hr style="background-color: red; margin: 0;" class="hrproduto d-none d-sm-block">
