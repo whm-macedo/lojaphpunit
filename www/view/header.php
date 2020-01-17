@@ -42,11 +42,11 @@
     <div class="col-md-4 col-sm-3 d-flex justify-content-center ">
       <nav class="navbar navbar-light ">
         <form class="form-inline ">
-          <div class="input-group barrapesquisa">
-            <div class="input-group-prepend  ">
-              <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-            </div>
+          <div class="input-group barrapesquisa">           
             <input type="text" class="form-control " placeholder="Pesquisar" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="input-group-prepend  ">
+              <button class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></button>
+            </div>
           </div>
         </form>
       </nav>
@@ -68,21 +68,12 @@
         <a class="dropdown-item" href="<?php echo BASEURL; ?>painel/cliente">Painel Cliente</a>
         <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
 
-          <a class="dropdown-item" href="#">Não tenho cadastrar</a>
+          <a class="dropdown-item" href="#">Não tenho cadastro</a>
           <a class="dropdown-item" href="<?php echo BASEURL; ?>cliente/logoff">
             Sair
           </a>
         </div>
       </div>
-
-
- 
-
-
-
-
-
-
     </div>
     <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
       <a href=" <?php echo BASEURL; ?>carrinho" class="mt-2">
