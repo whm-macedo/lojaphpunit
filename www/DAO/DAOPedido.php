@@ -5,6 +5,7 @@ use LOJA\Model\Conexao;
 use LOJA\Model\Pedido;
 use LOJA\Model\Item;
 use LOJA\Model\Carrinho;
+use LOJA\Model\Cliente;
 
 class DAOPedido{
     public function cadastrar(Pedido $pedido, Carrinho $carrinho){
@@ -17,9 +18,10 @@ class DAOPedido{
             $con->bindValue(":data_pedido", $pedido->getData());
             $con->bindValue(":frete", $pedido->getFrete());
             $con->bindValue(":dias", $pedido->getDias());
-            $con->bindValue(":fk_cliente", $pedido->getCliente()->getPk_cliente());
+            $con->bindValue(":fk_cliente", $_SESSION['clienteid']);
             $con->execute();
             $lastId = $pdo->lastInsertId();
+            $_SESSION['idpedido'] = $lastId;
 
             $con2 = $pdo->prepare("INSERT INTO item VALUES (:quantidade, :fk_produto, :fk_pedido)" );
 

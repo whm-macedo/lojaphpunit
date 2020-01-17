@@ -10,17 +10,21 @@
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item  active text-center">
-      <a href="<?php echo BASEURL; ?>produto/listar"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide1.png" alt="first slide"></a>
-
+    <div class="carousel-item  active text-center ">
+      <a class="slideDesktop" href="<?php echo BASEURL; ?>produto/listar"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide1.png" alt="first slide"></a>
+      <a class="slideMobile" href="<?php echo BASEURL; ?>produto/listar"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>DOE+mobile.png" alt="first slide"></a>
     </div>
     <div class="carousel-item text-center">
-      <a href="<?php echo BASEURL; ?>voluntario"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide2.png" alt="..."></a>
-
+      <a class="slideDesktop" href="<?php echo BASEURL; ?>voluntario"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>slide2.png" alt="..."></a>
+      <a class="slideMobile" href="<?php echo BASEURL; ?>voluntario"><img class="carousel-img mt-4" src="<?php echo DIRIMG; ?>voluntarioMobile.png" alt="..."></a>
     </div>
     <div class="carousel-item text-center">
-   <a href="<?php echo BASEURL; ?>mapas"><video  autoplay loop style="margin-top:25px;">
+   <a class="slideDesktop" href="<?php echo BASEURL; ?>mapas"><video  autoplay loop style="margin-top:25px;">
       <source class="mt-4" src="<?php echo DIRIMG; ?>slide3.mp4" type="video/mp4">
+    </video>
+    </a> 
+    <a class="slideMobile" href="<?php echo BASEURL; ?>mapas"><video  autoplay loop style="margin-top:25px;">
+      <source class="mt-4" src="<?php echo DIRIMG; ?>doacaoMobile.mp4" type="video/mp4">
     </video>
     </a> 
     </div>

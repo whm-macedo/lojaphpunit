@@ -52,7 +52,7 @@
                             <div class="card card-carrinho" style="width: 18rem;">
                                 <div class="card-body  ">
                                     <h5 class="card-title mb-0">
-                                        <p><?php echo $produto->getNome(); ?></p>
+                                       <p><?php echo $produto->getNome(); ?></p>
                                         <p class="card-text mb-0 ">Descrição do produto</p>
                                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                         <div class="dropdown ">

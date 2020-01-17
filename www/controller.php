@@ -47,7 +47,7 @@
         /**CLIENTE */
 
         case 'logincliente':
-            $obj = new \LOJA\API\ClienteLogar;
+            $obj = new \LOJA\API\ClienteLogar($url);
             $msg = $obj->msg;
             $view = 'form-login-cliente.php';
             break;
@@ -186,6 +186,7 @@
 
         /**PAINEL CLIENTE */
         case 'painelcliente':
+            $obj = new \LOJA\API\UsuarioLogar;
             $view = "painel-cliente.php";
         break;
         /**PAINEL CLIENTE */
@@ -227,9 +228,16 @@
             $view = 'lista-mapa.php';
         break; 
 
+        /**PAGEMENTO */
+        
+        case 'pedidopagamento':
+            $view = 'pagamento.php';
+        break; 
+
+
         case 'pedidofinalizar':
             //\LOJA\includes\Seguranca::restritoUsuario();
-            $obj = new \LOJA\API\PedidoCadastrar;
+            $obj = new \LOJA\API\PedidoCadastrar($url);
             
         break;
         
