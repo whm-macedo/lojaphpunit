@@ -42,11 +42,11 @@
     <div class="col-md-4 col-sm-3 d-flex justify-content-center ">
       <nav class="navbar navbar-light ">
         <form class="form-inline ">
-          <div class="input-group barrapesquisa">
-            <div class="input-group-prepend  ">
-              <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-            </div>
+          <div class="input-group barrapesquisa">           
             <input type="text" class="form-control " placeholder="Pesquisar" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="input-group-prepend  ">
+              <button class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></button>
+            </div>
           </div>
         </form>
       </nav>
