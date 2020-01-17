@@ -18,13 +18,13 @@
 
                     </div>
                 </div>
-                <div class="col-md-6">
-                <h2 class="display-5"> DADOS DO PEDIDO:</h2>
-                <p>Pedidos:</p> 
-                <p>Frete:</p>
-                <p>Total compra:</p>   
-            </div>
-                <div class="col-md-12">
+                <div class="col-md-6 border-left">
+                    <h2 class="display-5 mb-0"> DADOS DO PEDIDO:</h2>
+                    <p class="mb-0">Pedidos:</p>
+                    <p class="mb-0">Frete:</p>
+                    <p class="mb-0">Total compra:</p>
+                </div>
+                <div class="col-md-6 border-right">
 
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="form-group row ml-1">
 
-                                    <div class="form-group col-md-1 ">
+                                    <div class="form-group col-md-2 ">
 
                                         <select id="inputEstado" class="form-control" style="width:85px; margin-right:8px;">
                                             <option selected>Mês</option>
@@ -93,7 +93,10 @@
 
                     </div>
                 </div>
-               
+                <div class="col-md-6 border-right border-top mt-3">
+                    <button type="submit" class="btn btn-success mt-3">Comfirmar comprar</button>
+
+                </div>
             </div>
         </div>
     </div>

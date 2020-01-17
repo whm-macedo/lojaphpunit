@@ -1,8 +1,8 @@
-<?php include "view/header-adm.php"; ?>
+<?php include "view/header.php"; ?>
 
-<div class="jumbotron">
+<div class="jumbotron pt-3">
 
-  <h1 class="display-5 d-flex justify-content-center" style="color: #ff0000"><i class="fas fa-cart-plus" style="color: #ff0000;"></i>  Produtos</h1>
+  <h1 class="display-4 d-flex justify-content-center" style="color: #ff0000"><i class="fas fa-cart-plus" style="color: #ff0000;"></i>  Produtos</h1>
   <hr   style="background-color: red; ">
 
 
