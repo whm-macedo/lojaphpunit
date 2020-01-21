@@ -1,4 +1,4 @@
-<?php include "view/header-adm.php"; ?>
+<?php include "view/header.php"; ?>
 
 <div class="jumbotron">
 
