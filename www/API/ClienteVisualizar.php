@@ -10,10 +10,10 @@ class ClienteVisualizar
 
     public function __construct()
     {
-        if ($_GET['id']) {
+        if ($_SESSION['clienteid']) {
             try {
                 $DAO = new DAOCliente();
-                $this->cliente = $DAO->buscarPorId($_GET['id']);
+                $this->cliente = $DAO->buscarPorId($_SESSION['clienteid']);
             } catch (\Exception $erro) {
                 $this->cliente = $erro->getMessage();
             }

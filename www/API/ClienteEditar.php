@@ -11,7 +11,7 @@ class ClienteEditar{
             try {
                 $obj = new Cliente();
 
-                $obj-> setPk_cliente($_POST['id']);
+                $obj-> setPk_cliente($_SESSION['clienteid']);
                 $obj-> setNome($_POST['nome']);
                 $obj-> setSenha($_POST['senha']);
                 $obj-> setTelefone($_POST['telefone']);
