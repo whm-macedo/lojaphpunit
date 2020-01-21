@@ -20,13 +20,13 @@
                 </div>
 
 
-                <div class="col-md-6">
+                <div class="col-md-6 border-left">
                 <h2 class="display-5"> DADOS DO PEDIDO:</h2>
-                <p>Dias: <?php echo $pedido->getDias() ?></p> 
-                <p>Frete: <?php echo $pedido->getFrete() ?></p>
-                <p>Total compra:  <?php echo $pedido->getTotal() ?></p>   
+                <p class="mb-0">Dias: <?php echo $pedido->getDias() ?></p> 
+                <p class="mb-0" >Frete: <?php echo $pedido->getFrete() ?></p>
+                <p class="mb-0">Total compra:  <?php echo $pedido->getTotal() ?></p>   
             </div>
-                <div class="col-md-12">
+                <div class="col-md-6 border-right">
 
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 border-right border-top mt-3">
+                <div class="col-md-6  border-top mt-3">
                     <button type="submit" class="btn btn-success mt-3">Comfirmar comprar</button>
 
                 </div>
