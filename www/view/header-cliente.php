@@ -141,7 +141,7 @@
 
                     <!-- BOTAR PHP -->
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo BASEURL; ?>carrinho">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>pedido/listar">
                             Listar pedidos
                         </a>
                     </li>

@@ -241,6 +241,15 @@
             $obj = new \LOJA\API\PedidoCadastrar($url);
             
         break;
+         
+        case 'pedidolistar':
+            //\LOJA\includes\Seguranca::restritoUsuario();
+            $obj = new \LOJA\API\PedidoListar();
+            $pedido = $obj->result;
+            
+            $view = "pedido-detalhado.php";
+            
+        break;
         
         case 'comofunciona':
             $view = 'como-funciona.php';
