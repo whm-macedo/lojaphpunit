@@ -57,6 +57,7 @@ m
     margin-bottom: 0rem !important;
     
 }
+/*  */
 /* Formulario cliente */
 .formadm{
     background-color: #e60014;
@@ -64,6 +65,53 @@ m
 .formadm:hover{
     background-color: #f14d5b;
 }
+.formcliente{
+    width: 2200px;
+    height: 260px;
+    background-color: #e60014 ;
+}
+.inputcliente{
+    width: 210px !important;
+    margin-left: 100px;
+}
+.imglogin{
+    margin-left: px;
+}
+/* form cliente teste */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  
 /* MENU CATEGORIA */
 
 .btnpagamento{

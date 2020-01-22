@@ -94,6 +94,11 @@
 
                 ?>
                 <!-- Colocar onde quer que apareca o o valor -->
+                
+            </div>
+            <div class="col-md-4">
+                <h2 class="display-5 mb-5"> Total da Compra:</h2>
+                <!-- Colocar onde quer que apareca o o valor -->
                 <form method="POST" action="<?php echo BASEURL; ?>frete/calcular">
                     <label for="">Frete</label>
                     <input type="text" size="20" name="cep">
@@ -114,9 +119,6 @@
             <a href="<?php echo BASEURL . "pedido/finalizar"; ?>" class="btn btn-danger">Finalizar Pedido</a>
         </div> -->
                 </form>
-            </div>
-            <div class="col-md-4">
-                <h2 class="display-5"> Total da Compra:</h2>
             </div>
     </div>
 
