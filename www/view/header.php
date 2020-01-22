@@ -57,23 +57,37 @@
       <div class="dropdown h-25  ">
         <button class="btn btn-secondary dropdown-toggle login mt-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-user icon"> 
-          <?php
-      if (isset($_SESSION['clientenome'])) {
-        echo $_SESSION['clientenome'];
-      } else {
-        echo "Login";
-      }
-      ?>
+            <?php
+              if (isset($_SESSION['clientenome'])) {
+                echo $_SESSION['clientenome'];
+              } else {
+                echo "Login";
+              }
+              ?>
 
       </i></button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="<?php echo BASEURL; ?>painel/cliente">Painel Cliente</a>
+              <?php
+                if (isset($_SESSION['clientenome'])) {?>
+                  <a class="dropdown-item" href="<?php echo BASEURL; ?>painel/cliente">Painel Cliente</a>            
+                <?php
+                }
+              ?>
+        
+
+        
         <a class="dropdown-item" href="<?php echo BASEURL; ?>login/cliente">Entrar</a>
         
           <a class="dropdown-item" href="<?php echo BASEURL?>cliente/cadastrar">Não tenho cadastro</a>
-          <a class="dropdown-item" href="<?php echo BASEURL; ?>cliente/logoff">
-            Sair
-          </a>
+
+          <?php
+                if (isset($_SESSION['clientenome'])) {?>
+                  <a class="dropdown-item" href="<?php echo BASEURL; ?>cliente/logoff">Sair</a>
+                <?php
+                }
+              ?>        
+
+          
         </div>
       </div>
     </div>
