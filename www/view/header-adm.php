@@ -24,7 +24,7 @@
         <div class="col-md-1 col-sm-1 d-none d-sm-block">
             <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
                 <a class="navbar-brand" href="#">
-                    <img src="<?php echo DIRIMG; ?>core-sl.png" width="30" height="30" alt="">
+                    <img src="<?php echo DIRIMG; ?>doemais.png" width="30" height="30" alt="">
                 </a>
             </nav>
         </div>

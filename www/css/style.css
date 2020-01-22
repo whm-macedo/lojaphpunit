@@ -319,9 +319,6 @@ footer {
     .slideDesktop{
         display: none;
     }
-    .list-group-horizontal {
-        
-      }
     
 }
 @media (min-width: 600px) {
