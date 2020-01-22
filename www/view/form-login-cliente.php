@@ -3,23 +3,50 @@
 include "view/header-cliente.php";
 
 ?>
+<div class="row">
+  <div class="col-md-4">
 
-<div class="col-md-12 d-flex justify-content-center">
-<form class="form-horizontal" method="post" action="">
-      <img class="mb-4 ml-5 d-flex justify-content-center" src="<?php echo DIRIMG; ?>doe-final.png" alt="" width="72" height="72">
-      
-      <label for="inputEmail" class="sr-only">Usuário</label>
-      <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required="">
-      <label for="Password" class="sr-only">Senha</label>
-      <input id="senha" name="senha" type="password" placeholder="" class="form-control input-md" required="">
-      
-      <a class="d-flex justify-content-center " href="">
-              <p>Não tenho uma conta</p>
-            </a>
+  </div>
+  <div class="col-md-4 d-flex justify-content-center  mt-4">
 
-      <button class="btn btn-lg btn-primary btn-block mt-3 formadm" type="submit">Login</button>
-      
-    </form>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
 
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="<?php echo DIRIMG; ?>doevermelho.png" alt="first slide">
+        </div>
+
+        <!-- Login Form -->
+        <form>
+          <div class="form-group mb-2">
+            
+            <div class="col-md-4">
+              <input id="nome" name="nome" type="text" placeholder="Login" class="form-control input-md inputcliente">
+
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group mb-3">
+  
+            <div class="col-md-4">
+              <input id="senha" name="senha" type="password" placeholder="Senha" class="form-control input-md inputcliente">
+            </div>
+          </div>
+          <button id="login" name="login" class="btn btn-primary ml-3 mb-2 " style="width: 210px;">Entrar</button>
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="#">Não tenho cadastro?</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+
+  </div>
 </div>
-
