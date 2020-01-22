@@ -35,12 +35,12 @@ include "view/header-cliente.php";
               <input id="senha" name="senha" type="password" placeholder="Senha" class="form-control input-md inputcliente">
             </div>
           </div>
-          <button id="login" name="login" class="btn btn-primary ml-3 mb-2 " style="width: 210px;">Entrar</button>
+          <button id="login" name="login" class="btn btn-primary ml-3 mb-2 " style="width: 210px;">Login</button>
         </form>
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
-          <a class="underlineHover" href="#">Não tenho cadastro?</a>
+          <a class="underlineHover" href="#">Não tenho cadastro ?</a>
         </div>
 
       </div>
