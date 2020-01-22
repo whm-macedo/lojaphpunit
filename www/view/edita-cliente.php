@@ -4,7 +4,7 @@ include "view/header.php";
 
 ?>
 
-<form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL ?>cliente/editar/<?php echo $cliente['pk_cliente'] ?>">
+<form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL ?>cliente/editar">
     <fieldset>
 
         <!-- Form Name -->

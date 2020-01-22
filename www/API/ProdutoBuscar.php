@@ -8,10 +8,10 @@ class ProdutoBuscar{
     
 
     public function __construct(){
-        if ($_GET['id']) {
+        if ($_POST['nome']) {
             try {
                 $DAO = new DAOProduto();
-                $this->produto = $DAO->buscarPorNome($_GET['id']);
+                $this->produto = $DAO->buscarPorNome($_POST['nome']);
                 
             }catch (\Exception $e) {
                 $msg = $e->getMessage();
