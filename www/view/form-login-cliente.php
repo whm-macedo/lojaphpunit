@@ -19,11 +19,11 @@ include "view/header-cliente.php";
         </div>
 
         <!-- Login Form -->
-        <form>
+        <form method="POST">
           <div class="form-group mb-2">
             
             <div class="col-md-4">
-              <input id="nome" name="nome" type="text" placeholder="Login" class="form-control input-md inputcliente">
+              <input id="email" name="email" type="email" placeholder="email" class="form-control input-md inputcliente">
 
             </div>
           </div>
