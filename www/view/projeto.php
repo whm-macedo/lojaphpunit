@@ -21,7 +21,7 @@
     <div class="row">
       <div class="col-4">
         <div class="list-group list-group-horizontal " id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="1">Uma doação de sangue pode salvar até 4 vidas</a>
+          <a class="list-group-item list-group-item-action active " id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="1">Uma doação de sangue pode salvar até 4 vidas</a>
           <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list" href="#list-2" role="tab" aria-controls="wild">Seu organismo repõe rapidamente o sangue doado</a>
           <a class="list-group-item list-group-item-action" id="list-3-list" data-toggle="list" href="#list-3" role="tab" aria-controls="messages">Exame de Sangue Gratuito</a>
           <a class="list-group-item list-group-item-action" id="list-4-list" data-toggle="list" href="#list-4" role="tab" aria-controls="messages">Ajudar outras pessoas faz bem para você também</a>
