@@ -397,7 +397,15 @@ footer {
     .slideDesktop{
         display: none;
     }
-
+    .imgcar{
+        margin-left: 155px;
+    }
+    .inputcliente{
+        margin-left: 20px;;
+    }
+    .inputcl{
+        margin-left: 0px !important;
+    }
 }
 @media (min-width: 600px) {
 
