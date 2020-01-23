@@ -51,7 +51,8 @@ class DAOPedido{
         on item.fk_pedido = pedido.pk_pedido
         inner join produto
         on produto.pk_produto = item.fk_produto
-        where cliente.pk_cliente = id";
+        where cliente.pk_cliente = id 
+        group by pedido.pk_pedido"; // adicionado para agrupar por id
 
     
 
@@ -59,7 +60,12 @@ class DAOPedido{
     $con->bindValue(":id", $idCliente);
     $result = $con->execute();
     }
-    public function PedidoDetalhado($idPedido)    {
+
+
+
+    public function PedidoDetalhado($idCliente)
+    {
+
         // DETALHA UM PEDIDO
       
       $sql ="SELECT 

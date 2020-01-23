@@ -10,7 +10,7 @@ class ClienteLogar{
         if ($_POST) {
             try {
                 $obj = new Cliente();
-                $obj->setEmail($_POST['email']); // trocar
+                $obj->setEmail($_POST['email']);
                 $obj->setSenha($_POST['senha']);
 
                 $DAO = new DAOCliente();

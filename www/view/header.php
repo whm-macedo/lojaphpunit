@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="<?php echo DIRCSS; ?>bootstrap.css">
   <link rel="stylesheet" href="<?php echo DIRFAW; ?>all.css">
   <link rel="stylesheet" href="<?php echo DIRCSS; ?>style.css">
+   <!-- Bootstrap core CSS -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
   <title>DOE+</title>
 </head>

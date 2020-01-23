@@ -21,15 +21,15 @@
 <body>
     <!-- Just an image -->
     <div class="row menubarra">
-        <div class="col-md-1 col-sm-1 d-none d-sm-block">
+        <div class="col-md-2 col-sm-1 d-none d-sm-block">
 
             <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
                 <a class="navbar-brand" href="#">
-                    <img src="<?php echo DIRIMG; ?>core-sl.png" width="30" height="30" alt="">
+                    <img src="<?php echo DIRIMG; ?>doemais.png"width="80" height="55" alt="">
                 </a>
             </nav>
         </div>
-        <div class="col-md-2 col-sm-1">
+        <div class="col-md-1 col-sm-1">
 
         </div>
         <div class="col-md-1 col-sm-1">
@@ -141,7 +141,7 @@
 
                     <!-- BOTAR PHP -->
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo BASEURL; ?>carrinho">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>pedido/listar">
                             Listar pedidos
                         </a>
                     </li>
