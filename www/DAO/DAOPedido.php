@@ -59,8 +59,7 @@ class DAOPedido{
     $con->bindValue(":id", $idCliente);
     $result = $con->execute();
     }
-    public function PedidoDetalhado(Type $var = null)
-    {
+    public function PedidoDetalhado($idPedido)    {
         // DETALHA UM PEDIDO
       
       $sql ="SELECT 
