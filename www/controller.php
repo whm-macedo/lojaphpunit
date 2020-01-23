@@ -189,6 +189,14 @@
             $obj = new \LOJA\API\UsuarioLogar;
             $view = "painel-cliente.php";
         break;
+
+        case 'painelpedido':
+            $obj = new \LOJA\API\PedidoDetalhe;
+            $dados = $obj->dados;
+            $produtos = $obj->produtos;
+
+            $view = "painel-pedido.php";
+        break;
         /**PAINEL CLIENTE */
         
        /**PAINEL LOGOFF */
@@ -245,7 +253,7 @@
         case 'pedidolistar':
             //\LOJA\includes\Seguranca::restritoUsuario();
             $obj = new \LOJA\API\PedidoListar();
-            $pedido = $obj->result;
+            $pedido = $obj->lista;
             
             $view = "pedido-detalhado.php";
             
