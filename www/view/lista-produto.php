@@ -18,7 +18,7 @@
       $addCarrinho = BASEURL."carrinho/adicionar/" . $produto['id'];
       ?>
 
-      <div class="col-sm-3 mb-3">
+      <div class="col-sm-3 col-md-2 mb-3">
         <div class="card h-100 ">
           <a href="#"><img class="card-img-top" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
           <div class="card-body">
@@ -30,9 +30,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
             </p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-          </div>
+         
           <a type="button" class="btn btn-primary" href="<?php echo $addCarrinho; ?>">Comprar
             <!-- <button type="button" class="btn btn-primary">Comprar</button> -->
           </a>
