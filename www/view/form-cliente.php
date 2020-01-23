@@ -1,6 +1,6 @@
 <?php
 
-include "view/header-adm.php";
+include "view/header.php";
 
 ?>
 

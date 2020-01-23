@@ -103,20 +103,20 @@
 
                     <!-- BOTAR PHP -->
                     <li class="nav-item">
-                        <a class="navbar-brand" href="<?php echo BASEURL; ?>painel/cliente">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>painel/cliente">
 
                             Voltar
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" href="<?php echo BASEURL; ?>home">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>home">
 
                             Home
                         </a>
                     </li>
                     <!-- BOTAR PHP -->
                     <li class="nav-item">
-                        <a class="navbar-brand" href="<?php echo BASEURL; ?>cliente/logoff">
+                        <a class="nav-link" href="<?php echo BASEURL; ?>cliente/logoff">
                         
                             Logoff
                         </a>
@@ -150,11 +150,11 @@
                                 <?php echo BASEURL ?>cliente/visualizar/<?php echo $_SESSION["clienteid"]; ?>'>Dados Cadastrais</a>
                     </li>
                     <!-- BOTAR PHP -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASEURL; ?>voluntario">
                             Ser voluntario
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASEURL; ?>produto/listar">Loja</a>
                     </li>

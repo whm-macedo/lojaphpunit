@@ -1,6 +1,6 @@
 <?php
 
-include "view/header-cliente.php";
+include "view/header.php";
 
 ?>
 <div class="row">
