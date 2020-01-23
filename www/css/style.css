@@ -44,18 +44,21 @@
 /* pagina do projeto */
 .list-group-item.active {
     z-index: 2;
-    color: 
+    color:
 #fff;
 background-color:
 #f25252;
 border-color:
     #0e0e0e;
 }
-m
+/* form voluntario */
+.formvol{
+    width: 400px;
+}
 /* label do pagamento */
 .labelpagamento{
     margin-bottom: 0rem !important;
-    
+
 }
 /* Formulario voluntario */
 .formvol{
@@ -81,18 +84,19 @@ margin-left: 160px;;
 .imglogin{
     margin-left: px;
 }
+/* form voluntario */
 /* form cliente teste */
 
 .wrapper {
     display: flex;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     min-height: 100%;
     padding: 20px;
   }
-  
+
   #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
@@ -106,7 +110,7 @@ margin-left: 160px;;
     box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     text-align: center;
   }
-  
+
   #formFooter {
     background-color: #f6f6f6;
     border-top: 1px solid #dce8f1;
@@ -115,7 +119,7 @@ margin-left: 160px;;
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
   }
-  
+
 /* MENU CATEGORIA */
 
 .btnpagamento{
@@ -393,9 +397,9 @@ footer {
     .slideDesktop{
         display: none;
     }
-    
+
 }
 @media (min-width: 600px) {
-    
-  
+
+
   }
