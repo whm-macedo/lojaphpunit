@@ -95,7 +95,7 @@ class DAOProduto
         $produto->setPk_produto($obj['pk_produto']);
         $produto->setNome($obj['nome']);
         $produto->setPreco($obj['preco']);
-        $produto->setPreco($obj['categoria']);
+        $produto->setCategoria($obj['categoria']);
         $produto->setImagem($obj['imagem']);
 
         return $produto;

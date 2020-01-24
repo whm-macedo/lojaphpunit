@@ -1,10 +1,5 @@
 <?php include "view/header.php"; ?>
 
-
-
-
-
-
 <main class="m-3">
   <div class="container border p-2">
     <div class="row">

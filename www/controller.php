@@ -103,6 +103,9 @@
         case 'produtovisualizar':
             $obj = new \LOJA\API\ProdutoVisualizar;            
             $produto = $obj->produto;
+
+            $obj = new \LOJA\API\ProdutoListarHome;
+            $lista2 = $obj->lista;
             //echo $produto->getNome();
             $view = "detalhe-produto.php";
 
