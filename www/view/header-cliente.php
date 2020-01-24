@@ -90,33 +90,16 @@
         </div>
 
     </div>
-    <hr style="background-color: red;  margin: 0;" class=" ">
-    <div class="row justify-content-center ">
-        <!-- <div class="col-md-12 d-flex "> -->
-        <nav class="navbar navbar-expand-lg navbar-light  ">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse catnav" id="navbarNav">
-                <ul class="navbar-nav">
-
-
-
-                </ul>
-
-            </div>
-
-    </div>
+    
 
     <hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
     <div class="row justify-content-center ">
         <!-- <div class="col-md-12 d-flex "> -->
-        <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  ">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
             <div class="collapse navbar-collapse catnav" id="navbarNav">
                 <ul class="navbar-nav">
 

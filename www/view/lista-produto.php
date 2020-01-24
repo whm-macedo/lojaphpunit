@@ -1,6 +1,6 @@
 <?php include "view/header.php"; ?>
 
-<div class="jumbotron pt-3">
+<div class="jumbotron pt-3"  style="background: #fafafa">
 
   <h1 class="display-4 d-flex justify-content-center" style="color: #ff0000"><i class="fas fa-cart-plus" style="color: #ff0000;"></i>  Produtos</h1>
   <hr   style="background-color: red; ">
