@@ -22,9 +22,10 @@
 
                 <div class="col-md-6 border-left">
                 <h2 class="display-5"> DADOS DO PEDIDO:</h2>
-                <p class="mb-0">Dias: <?php echo $pedido->getDias() ?></p> 
-                <p class="mb-0" >Frete: <?php echo $pedido->getFrete() ?></p>
-                <p class="mb-0">Total compra:  <?php echo $pedido->getTotal() ?></p>   
+               
+                <p class="mb-0">Dias: <?php echo $pedido['dias'] ?></p> 
+                <p class="mb-0" >Frete: <?php echo $pedido['frete'] ?></p>
+                <p class="mb-0">Total compra:  <?php echo $pedido['total'] ?></p>   
             </div>
                 <div class="col-md-6 border-right">
 

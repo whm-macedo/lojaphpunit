@@ -11,9 +11,11 @@ class PedidoVisualizar{
        
            
         $DAO = new DAOPedido();
-        $this->pedido = $DAO->buscarPedidoCliente($_SESSION['idpedido']);          
+        $this->pedido = $DAO->pedidoDetalhado($_SESSION['idpedido']);    
+       
            
         
     }
 }
+//buscarPedidoCliente
 ?>

@@ -80,7 +80,8 @@ class DAOPedido{
       $sql ="SELECT 
       pedido.pk_pedido,
       pedido.data_pedido,
-      pedido.frete,      
+      pedido.frete, 
+      pedido.dias,     
       produto.preco,
       
       SUM(produto.preco*item.quantidade) as total
@@ -94,13 +95,14 @@ class DAOPedido{
         inner join produto
         on produto.pk_produto = item.fk_produto
 
-        where cliente.pk_cliente = :id 
-        group by pedido.pk_pedido"; // adicionado para agrupar por id
+        where pedido.pk_pedido = :id";
+         // adicionado para agrupar por id
 
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":id", $idPedido);
         $con->execute();
         $pedido = $con->fetch(\PDO::FETCH_ASSOC);
+        
         return $pedido;
         
     }

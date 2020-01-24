@@ -1,5 +1,5 @@
 <?php include "view/header-cliente.php"; ?>
-<p><?php var_dump($dados); ?></p>
+<p></p>
 <div class="row">
     <div class="col-md-4">
         <form class="form-horizontal" method="post" action="cadastrar">
