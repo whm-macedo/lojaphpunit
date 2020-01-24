@@ -303,10 +303,12 @@ a:hover {
 
 footer {
     background-color: #FFFAFA;
+    margin-top: auto;
 }
 
 .footer-copyright {
     background-color: #F5F5F5;
+    
 }
 
 /* PAGINA PROJETO\ voluntario */
