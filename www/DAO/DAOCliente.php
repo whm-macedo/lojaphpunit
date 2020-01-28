@@ -74,7 +74,6 @@ class DAOCliente{
             $con->bindValue(":bairro", $cliente->getBairro());
             $con->execute();
 
-            echo $cliente->getNome();
             return "Atualizado com sucesso";
             
 

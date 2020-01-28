@@ -1,8 +1,4 @@
-<?php
-
-include "view/header-cliente.php";
-
-?>
+<?php include "view/header-cliente.php"; ?>
 
 <form class="form-horizontal  offset-md-3" method="POST" action="<?php echo BASEURL?>cliente/visualizar/<?php echo $_GET['id']?>">
     <fieldset>
@@ -85,8 +81,7 @@ include "view/header-cliente.php";
         <div class="form-group">
             <label class="col-md-6 control-label" for="uf">UF:</label>
             <div class="col-md-6">
-                <input id="uf" name="uf" value="<?php echo $cliente['uf'];
-                                                ?>" type="text" placeholder="" class="form-control input-md">
+                <input id="uf" name="uf" value="<?php echo $cliente['uf'];?>" type="text" placeholder="" class="form-control input-md">
 
             </div>
         </div>
@@ -108,7 +103,6 @@ include "view/header-cliente.php";
         <button id="editar" name="editar" class="btn btn-primary">Editar</button></a>
       </div>
     </div>
-
 
     </fieldset>
 </form>

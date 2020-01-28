@@ -209,6 +209,9 @@ a:hover {
 
 .map {
     /* position: absolute; */
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    
     width: 56.6666%;
     top: 0;
     bottom: 0;
