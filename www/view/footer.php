@@ -1,6 +1,6 @@
 <?php include "view/mensagem.php" ?>
   </div>
-  <footer class="page-footer font-small special-color-dark pt-4">
+  <footer class="page-footer font-small special-color-dark pt-4 border-top">
 
   <!-- Footer Elements -->
   <div class="container">

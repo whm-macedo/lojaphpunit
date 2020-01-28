@@ -1,10 +1,11 @@
 <?php include "view/header-cliente.php"; ?>
 <p></p>
+<div>
 <div class="row">
     <div class="col-md-4">
-        <form class="form-horizontal" method="post" action="cadastrar">
+        <form class="form-horizontal border-right" method="post" action="cadastrar">
             <fieldset>
-                <legend>PEDIDO ID <?php echo $dados['pk_pedido']; ?></legend>
+                <legend class="ml-3">PEDIDO ID <?php echo $dados['pk_pedido']; ?></legend>
 
                 <div class="form-froup">
                     <label class="col-md-12 control-label" for="nome">Data da Compra</label>
@@ -45,9 +46,7 @@
             </fieldset>
         </form>
     </div>
-</div>
-
-<div class="col-md-8">
+    <div class="col-md-7">
     <table class="table">
         <thead>
             <tr>
@@ -72,4 +71,7 @@
         </tbody>
     </table>
 </div>
+</div>
+
+<?php include "footer.php"?>
  

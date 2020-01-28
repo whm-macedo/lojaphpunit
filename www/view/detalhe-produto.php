@@ -7,28 +7,18 @@
         <a href="#"><img class="card-img-top" src="<?php echo BASEURL . 'view/img/produtos/' . $produto->getImagem(); ?>" alt=""></a>
       </div>
       <div class="col-sm-8">
-        <div class="text-left">
+        <div class="text-left p-2" style="background: #fafafa">
           <h3><?php echo $produto->getNome() ?></h3>
           <h5>R$: <?php echo number_format($produto->getPreco(), 2, ",", "."); ?></h5>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
           </p>
-          <div class="dropdown mb-1 ">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              1
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">+1</a>
-              <a class="dropdown-item" href="#">+2</a>
-              <a class="dropdown-item" href="#">+3</a>
-            </div>
-
-          </div>
+         
           <a type="button" class="btn btn-primary mb-1" href="<?php echo $addCarrinho; ?>">Comprar
             <!-- <button type="button" class="btn btn-primary">Comprar</button> -->
           </a>
           
         </div>
-        <div class="row">
+        <div class="row mt-3">
           <ul class="nav nav-tabs ">
             <li class="nav-item">
               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descrição</a>
@@ -42,8 +32,8 @@
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <p>Camiseta azul feita em algodão com caimento perfeito proporcionando leveza e conforto nos movimentos.</p>
-              <p>Camiseta meia manga com decote arrendondado e importada.</p>
+              <p>Camiseta azul feita em algodão com caimento perfeito proporcionando leveza e conforto nos movimentos.Camiseta meia manga com decote arrendondado e importada.</p>
+              
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <p>Feita em algodão importado.</p>
@@ -59,7 +49,7 @@
 
 <?php $addCarrinho = BASEURL . "carrinho/adicionar/" . $produto->getPk_produto(); ?>
 <!-- INICIO Carrosel de produtos -->
-<div id="demo" class="carousel slide item-prod" data-ride="carousel" style="height: 480px;">
+<div id="demo" class="carousel slide item-prod mb-4" data-ride="carousel" style="height: 480px; background: #fafafa; ">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -69,10 +59,10 @@
   </ul>
 
   <!-- The slideshow -->
-  <div class="carousel-inner" style="height: 480px;">
+  <div class="carousel-inner" style="height: 480px;  ;">
 
 
-    <div class="carousel-item item-prod active">
+    <div class="carousel-item item-prod active" style="background: #fafafa">
       <div class="container">
         <div class="row mt-3">
           <?php foreach ($lista2 as $produto) {
@@ -100,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item item-prod ">
+    <div class="carousel-item item-prod " style="background: #fafafa">
       <div class="container">
         <div class="row mt-3">
           <?php foreach ($lista2 as $produto) {
@@ -128,7 +118,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item item-prod ">
+    <div class="carousel-item item-prod " style="background: #fafafa">
       <div class="container">
         <div class="row mt-3">
           <?php foreach ($lista2 as $produto) {
