@@ -2,6 +2,7 @@
 
 
 include "header.php"?>
+<div class="container">
 <table class="table">
     <thead>
         <tr>
@@ -22,5 +23,5 @@ include "header.php"?>
         <?php } ?>
     </tbody>
 </table>
-
+</div>
 <?php include "footer.php"?>

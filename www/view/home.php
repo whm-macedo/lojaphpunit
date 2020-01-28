@@ -58,7 +58,7 @@
         <img class="iconhome" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTEuOTQ1IDUxMS45NDUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMS45NDUgNTExLjk0NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnIGlkPSJYTUxJRF83MzRfIj4KCTxnIGlkPSJYTUxJRF8yMjI3XyI+CgkJPGcgaWQ9IlhNTElEXzIyMjJfIj4KCQkJPGcgaWQ9IlhNTElEXzE5MDNfIj4KCQkJCTxnIGlkPSJYTUxJRF8yMTgyXyI+CgkJCQkJPGNpcmNsZSBpZD0iWE1MSURfMjIxM18iIHN0eWxlPSJmaWxsOiM5M0U3Rjg7IiBjeD0iMTI3Ljk0NSIgY3k9IjEyNy45NDUiIHI9IjExOCIvPgoJCQkJPC9nPgoJCQkJPHBhdGggaWQ9IlhNTElEXzI3OTBfIiBzdHlsZT0iZmlsbDojRkY3NDgwOyIgZD0iTTQ2Ni41NjIsNDY1LjUwNmgzNS4zODN2LTI0LjA1MWMwLTQ4LjQxOS0zOS4xOTktODcuNjctODcuNTUyLTg3LjY3SDkzLjk3NSAgICAgIGwtMjkuNDQyLDI2LjM3OXY4NS4zNDJoMzguOTk4SDQ2Ni41NjJ6Ii8+CgkJCQk8cGF0aCBpZD0iWE1MSURfMjc4OV8iIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTA0LjkyNiwzNTIuOTg0SDkzLjQyN2wtMjkuNDgyLDI2LjM3OXYzMC4zMDRoMTguMjYgICAgICBjMTIuNTQ4LDAsMjIuNzIxLTEwLjE3MywyMi43MjEtMjIuNzIxVjM1Mi45ODR6Ii8+CgkJCQk8cGF0aCBpZD0iWE1MSURfMjc4OF8iIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNNDM3LjY3LDM1Ni4xNjV2MjYuNzcxYzAsMTAuNTk1LDguNTg5LDE5LjE4NSwxOS4xODUsMTkuMTg1aDM2LjE3NyAgICAgIEM0ODIuMTExLDM3OS44NDIsNDYyLjAxNiwzNjIuODkzLDQzNy42NywzNTYuMTY1eiIvPgoJCQkJPGNpcmNsZSBpZD0iWE1MSURfMjc4N18iIHN0eWxlPSJmaWxsOiNBRkFCQjA7IiBjeD0iMTQzLjYxMiIgY3k9IjQ2NS41MDYiIHI9IjM2LjQzOSIvPgoJCQkJPGNpcmNsZSBpZD0iWE1MSURfMjc4Nl8iIHN0eWxlPSJmaWxsOiNBRkFCQjA7IiBjeD0iNDIyLjgzOSIgY3k9IjQ2NS41MDYiIHI9IjM2LjQzOSIvPgoJCQkJPHBhdGggaWQ9IlhNTElEXzI3ODVfIiBzdHlsZT0iZmlsbDojRDVGNUZCOyIgZD0iTTk0Ljk3OSwzNTIuOTg0bDcuMTk2LTE2LjY1NmMxNi41NTUtMzguMzE4LDU0LjMwMi02My4xMyw5Ni4wNDMtNjMuMTNoMTAyLjU0MyAgICAgIGMzMi4yMjMsMCw2Mi42NDgsMTQuODQ4LDgyLjQ3NSw0MC4yNWwzMC43ODEsMzkuNDM2TDk0Ljk3OSwzNTIuOTg0eiIvPgoJCQk8L2c+CgkJPC9nPgoJPC9nPgoJPGcgaWQ9IlhNTElEXzcxNV8iPgoJCTxnIGlkPSJYTUxJRF83MTZfIj4KCQkJPHBhdGggaWQ9IlhNTElEXzczM18iIGQ9Ik0xMjcuOTQ1LDI1NS44ODRjMzIuNzc0LTAuMDAzLDY1LjU1OS0xMi40NzksOTAuNTEtMzcuNDNjMzguMDk0LTM4LjA5Myw0OC4yNTgtOTYuNDExLDI1LjI5My0xNDUuMTE3ICAgICBjLTIuMzU1LTQuOTk2LTguMzE0LTcuMTM1LTEzLjMxLTQuNzhjLTQuOTk1LDIuMzU1LTcuMTM2LDguMzE0LTQuNzgsMTMuMzFjMTkuMzc3LDQxLjA5NiwxMC43OTksOTAuMzAzLTIxLjM0NiwxMjIuNDQ1ICAgICBjLTQyLjEwOSw0Mi4xMDktMTEwLjYyNSw0Mi4xMDktMTUyLjczNCwwcy00Mi4xMDktMTEwLjYyNSwwLTE1Mi43MzRjMzEuOTMyLTMxLjkzNCw4MC44OTctNDAuNjI0LDEyMS44NDUtMjEuNjI2ICAgICBjNS4wMTMsMi4zMjUsMTAuOTU3LDAuMTQ2LDEzLjI4LTQuODYyYzIuMzI0LTUuMDEsMC4xNDctMTAuOTU2LTQuODYyLTEzLjI4QzEzMy4zMDktMTAuNzA2LDc1LjI3OS0wLjQwOCwzNy40MzYsMzcuNDM1ICAgICBjLTQ5LjkwNyw0OS45MDctNDkuOTA3LDEzMS4xMTIsMCwxODEuMDJDNjIuMzkzLDI0My40MTEsOTUuMTYzLDI1NS44ODgsMTI3Ljk0NSwyNTUuODg0eiIvPgoJCQk8cGF0aCBpZD0iWE1MSURfNzMyXyIgZD0iTTIwNC41MDcsMTM4LjA0MWg3LjI2NGM1LjUyMiwwLDEwLTQuNDc4LDEwLTEwcy00LjQ3OC0xMC0xMC0xMGgtNy4yNjRjLTUuNTIyLDAtMTAsNC40NzgtMTAsMTAgICAgIFMxOTguOTg0LDEzOC4wNDEsMjA0LjUwNywxMzguMDQxeiIvPgoJCQk8cGF0aCBpZD0iWE1MSURfNzMxXyIgZD0iTTQ0LjEyLDExNy44NDljLTUuNTIyLDAtMTAsNC40NzgtMTAsMTBzNC40NzgsMTAsMTAsMTBoNy4yNjRjNS41MjIsMCwxMC00LjQ3OCwxMC0xMHMtNC40NzgtMTAtMTAtMTAgICAgIEg0NC4xMnoiLz4KCQkJPHBhdGggaWQ9IlhNTElEXzczMF8iIGQ9Ik0xMTcuODUsMjA0LjUwN3Y3LjI2NGMwLDUuNTIyLDQuNDc4LDEwLDEwLDEwczEwLTQuNDc4LDEwLTEwdi03LjI2NGMwLTUuNTIyLTQuNDc4LTEwLTEwLTEwICAgICBTMTE3Ljg1LDE5OC45ODQsMTE3Ljg1LDIwNC41MDd6Ii8+CgkJCTxwYXRoIGlkPSJYTUxJRF83MjlfIiBkPSJNMTM4LjA0MSw1MS43MjdjMC4wMDctNS41MjMtNC40NjUtMTAuMDA2LTkuOTg3LTEwLjAxM2MtMC4wMDUsMC0wLjAwOSwwLTAuMDEzLDAgICAgIGMtNS41MTgsMC05Ljk5Myw0LjQ2OS0xMCw5Ljk4N2wtMC4wOSw3MS4xOTRsLTI4LjkxNiwyMS4zNzNjLTQuNDQxLDMuMjgzLTUuMzgsOS41NDUtMi4wOTgsMTMuOTg2ICAgICBjMS45NjEsMi42NTMsNC45ODUsNC4wNTcsOC4wNSw0LjA1N2MyLjA2NSwwLDQuMTQ4LTAuNjM4LDUuOTM3LTEuOTU5bDMyLjk2Ni0yNC4zNjZjMi41NDctMS44ODMsNC4wNTItNC44NjEsNC4wNTYtOC4wMjkgICAgIEwxMzguMDQxLDUxLjcyN3oiLz4KCQkJPHBhdGggaWQ9IlhNTElEXzcyOF8iIGQ9Ik0yMTEuMzg1LDU0LjUwNWMyLjYzLDAsNS4yMS0xLjA2OSw3LjA3LTIuOTNzMi45My00LjQ0LDIuOTMtNy4wN3MtMS4wNjktNS4yMS0yLjkzLTcuMDY5ICAgICBjLTEuODYtMS44Ni00LjQ0LTIuOTMxLTcuMDctMi45MzFzLTUuMjEsMS4wNy03LjA2OSwyLjkzMWMtMS44NiwxLjg1OS0yLjkzMSw0LjQzOS0yLjkzMSw3LjA2OXMxLjA3LDUuMjEsMi45MzEsNy4wNyAgICAgQzIwNi4xNzUsNTMuNDM1LDIwOC43NTUsNTQuNTA1LDIxMS4zODUsNTQuNTA1eiIvPgoJCQk8cGF0aCBpZD0iWE1MSURfNzE5XyIgZD0iTTQxOS4xMzEsMzQzLjk0NmwtMjcuOTI4LTM2LjE3NGMtMjEuNTQ5LTI3LjkxMS01NS40NjYtNDQuNTc0LTkwLjcyOS00NC41NzRIMTk4LjU0MiAgICAgYy00Ni4wMTksMC04Ny4yNzMsMjcuNDE1LTEwNS4xMDIsNjkuODQzbC01LjM0NCwxMi43MmMtMC4yNjIsMC4xOTItMC41MTcsMC4zOTUtMC43NiwwLjYxM2wtMjUuNjkzLDIyLjk4OEgxMCAgICAgYy01LjUyMiwwLTEwLDQuNDc4LTEwLDEwczQuNDc4LDEwLDEwLDEwaDQ0LjUzMnYyOS43MDVoLTE3LjU2Yy01LjUyMiwwLTEwLDQuNDc4LTEwLDEwczQuNDc4LDEwLDEwLDEwaDE3LjU2djI2LjQzOCAgICAgYzAsNS41MjIsNC40NzgsMTAsMTAsMTBoMzMuNzY0YzQuNTg3LDIwLjgxNCwyMy4xNjksMzYuNDM5LDQ1LjM0MiwzNi40MzlzNDAuNzU1LTE1LjYyNSw0NS4zNDMtMzYuNDM5aDExNy4xMyAgICAgYzUuNTIyLDAsMTAtNC40NzgsMTAtMTBzLTQuNDc4LTEwLTEwLTEwaC01MS4zdi05MS42OGgxNTkuNDk1YzQuNTU4LDAsOS4wMTgsMC40MTcsMTMuMzYyLDEuMTc1djE3LjkzNyAgICAgYzAsMTYuMDkzLDEzLjA5MiwyOS4xODUsMjkuMTg1LDI5LjE4NWgyOS4zMTVjMy43MTIsOS4wNTksNS43NzUsMTguOTYyLDUuNzc1LDI5LjM0MnYxNC4wNDJoLTIzLjc2NCAgICAgYy00LjU4Ny0yMC44MTQtMjMuMTY5LTM2LjQzOC00NS4zNDItMzYuNDM4Yy0yNS42MDYsMC00Ni40MzksMjAuODMyLTQ2LjQzOSw0Ni40MzhzMjAuODMzLDQ2LjQzOSw0Ni40MzksNDYuNDM5ICAgICBjMjIuMTczLDAsNDAuNzU1LTE1LjYyNSw0NS4zNDItMzYuNDM5aDMzLjc2NGM1LjUyMiwwLDEwLTQuNDc4LDEwLTEwdi0yNC4wNDJDNTExLjk0NSwzODkuMjQzLDQ3MC43MzcsMzQ2LjQ2OSw0MTkuMTMxLDM0My45NDZ6ICAgICAgTTQyMi44MzksNDkxLjk0NWMtMTQuNTc5LDAtMjYuNDM5LTExLjg2LTI2LjQzOS0yNi40MzljMC0xNC41NzgsMTEuODYtMjYuNDM4LDI2LjQzOS0yNi40MzggICAgIGMxNC41NzgsMCwyNi40MzgsMTEuODYsMjYuNDM4LDI2LjQzOEM0NDkuMjc3LDQ4MC4wODUsNDM3LjQxNyw0OTEuOTQ1LDQyMi44MzksNDkxLjk0NXogTTE5OC41NDIsMjgzLjE5OGgzNi4yNzF2NjAuNjI4aC0xMjQuMjEgICAgIGwxLjI3Ni0zLjAzOEMxMjYuNTgsMzA1LjgwMywxNjAuNTk3LDI4My4xOTgsMTk4LjU0MiwyODMuMTk4eiBNOTQuOTI2LDM2Ni40MTl2MjAuNTI2YzAsNy4wMTUtNS43MDYsMTIuNzIxLTEyLjcyMSwxMi43MjEgICAgIGgtNy42NzN2LTE1TDk0LjkyNiwzNjYuNDE5eiBNMTQzLjYzOSw0OTEuOTQ1Yy0xNC41NzgsMC0yNi40MzgtMTEuODYtMjYuNDM4LTI2LjQzOWMwLTE0LjU3OCwxMS44Ni0yNi40MzgsMjYuNDM4LTI2LjQzOCAgICAgYzE0LjU3OSwwLDI2LjQzOSwxMS44NiwyNi40MzksMjYuNDM4QzE3MC4wNzgsNDgwLjA4NSwxNTguMjE4LDQ5MS45NDUsMTQzLjYzOSw0OTEuOTQ1eiBNMjM0LjgxMyw0NTUuNTA2aC00NS44MzEgICAgIGMtNC41ODgtMjAuODE0LTIzLjE3LTM2LjQzOC00NS4zNDMtMzYuNDM4cy00MC43NTUsMTUuNjI0LTQ1LjM0MiwzNi40MzhINzQuNTMydi0zNS44NGg3LjY3MyAgICAgYzE4LjA0MiwwLDMyLjcyMS0xNC42NzksMzIuNzIxLTMyLjcyMXYtMjMuMTE5aDExOS44ODdWNDU1LjUwNnogTTI1NC44MTMsMjgzLjE5OGg0NS42NjJjMjkuMTA5LDAsNTcuMTA5LDEzLjc1Niw3NC44OTgsMzYuNzk3ICAgICBsMTguMzk5LDIzLjgzMUgyNTQuODEzVjI4My4xOTh6IE00NTYuODU0LDM5Mi4xMjJjLTUuMDY0LDAtOS4xODUtNC4xMi05LjE4NS05LjE4NXYtMTEuNTY1ICAgICBjMTAuMjk1LDQuOTIsMTkuMzQ3LDEyLjAzOCwyNi41MzYsMjAuNzQ5SDQ1Ni44NTR6Ii8+CgkJCTxwYXRoIGlkPSJYTUxJRF83MThfIiBkPSJNMjc2LjY1LDM4MS4wNTJjLTUuNTIyLDAtMTAsNC40NzgtMTAsMTBzNC40NzgsMTAsMTAsMTBoMTYuODA0YzUuNTIyLDAsMTAtNC40NzgsMTAtMTBzLTQuNDc4LTEwLTEwLTEwICAgICBIMjc2LjY1eiIvPgoJCQk8cGF0aCBpZD0iWE1MSURfNzE3XyIgZD0iTTM0Ni4xMTUsNDU1LjUwNWMtMi42NDEsMC01LjIxLDEuMDctNy4wOCwyLjkzMWMtMS44NiwxLjg1OS0yLjkyLDQuNDM5LTIuOTIsNy4wNjlzMS4wNiw1LjIxLDIuOTIsNy4wNyAgICAgYzEuODcsMS44Niw0LjQzOSwyLjkzLDcuMDgsMi45M2MyLjYzLDAsNS4yMS0xLjA2OSw3LjA3LTIuOTNjMS44NTktMS44NiwyLjkzLTQuNDQsMi45My03LjA3cy0xLjA3LTUuMjEtMi45My03LjA2OSAgICAgQzM1MS4zMjUsNDU2LjU3NSwzNDguNzQ1LDQ1NS41MDUsMzQ2LjExNSw0NTUuNTA1eiIvPgoJCTwvZz4KCTwvZz4KPC9nPgoKCgoKCgoKCgoKCgoKCgo8L3N2Zz4K" />
 
 
-        <h3 class="mb-2 text-primary">ENTREGA RAPIDA E SEGURA teste</h3>
+        <h3 class="mb-2 text-primary">ENTREGA RAPIDA E SEGURA </h3>
         <p>Voluntario e doadores tem direito a frete diferenciado</p>
       </div>
       <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="300">
@@ -70,7 +70,7 @@
   </div>
 </section>
 <!-- inicio lista produto -->
-<div class="jumbotron">
+<div class="jumbotron pt-0" style="background: #fafafa">
   <div class="container">
     <h1 class="display-4 justify-content-center" style="color:red"><i class="fas fa-cart-plus" style="color: #ff0000;"></i> Produtos</h1>
     <hr style="background-color: red;">
@@ -80,9 +80,10 @@
         <?php foreach ($lista2 as $produto) {
           $linkRemove = BASEURL . "carrinho/adicionar/" . $produto['id'];
         ?>
+        <a href="">
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">
-              <a href="#"><img class="card-img-top grow" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
+              <a href="<?php echo BASEURL . "produto/visualizar/" . $produto['id'] ?>"><img class="card-img-top grow" src="<?php echo BASEURL . "view/img/produtos/" . $produto['imagem'] ?>" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#"></a>
@@ -99,6 +100,7 @@
               </a>
             </div>
           </div>
+        </a>
         <?php } ?>
 
       </div>
@@ -108,7 +110,7 @@
 
 <!-- fim lista produto -->
 <!-- INICIO CARROSEL PRODUTO -->
-<div id="demo" class="carousel slide item-prod" data-ride="carousel" style="height: 480px;">
+<div id="demo" class="carousel slide item-prod mb-4" data-ride="carousel" style="height: 480px;" style="background: #fafafa">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -118,10 +120,10 @@
   </ul>
 
   <!-- The slideshow -->
-  <div class="carousel-inner" style="height: 480px;">
+  <div class="carousel-inner" style="height: 480px;"  >
 
 
-    <div class="carousel-item item-prod active">
+    <div class="carousel-item item-prod active"  style="background: #fafafa">
       <div class="container">
         <div class="row mt-3">
           <?php foreach ($lista2 as $produto) {
@@ -149,7 +151,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item item-prod ">
+    <div class="carousel-item item-prod "  style="background: #fafafa">
       <div class="container">
         <div class="row mt-3">
           <?php foreach ($lista2 as $produto) {
@@ -177,7 +179,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item item-prod ">
+    <div class="carousel-item item-prod " style="background: #fafafa">
       <div class="container">
         <div class="row mt-3">
           <?php foreach ($lista2 as $produto) {
