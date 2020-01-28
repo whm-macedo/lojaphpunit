@@ -1,6 +1,9 @@
+<?php
 
-<div class="row  d-flex justify-content-center mt-5">
-</div>
+include "view/header.php";
+
+?>
+ 
 <div class="col-md-12 d-flex justify-content-center">
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
@@ -14,9 +17,13 @@
               <img src="<?php echo DIRIMG; ?>doe-final.png" Class="w-50 d-flex justify-content-center ml-5" alt="">
               
             </figure>
+            
           </legend>
 
           <!-- Text input-->
+          <div class="d-flex justify-content-center">
+          <p  style="color: #ff1100 "> Administrador</p>
+          </div>
           <div class="form-group formadm">
 
             <input id="nome" name="nome" type="text" placeholder="Usuario" class="form-control input-md" required="">
